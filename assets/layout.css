@@ -71,8 +71,8 @@ a {
 }
 
 .site-head a:hover {
-  color: #3E7FCB;
-  border-color: #3E7FCB;
+  color: rgba(0, 0, 0, 0.68);
+  border-color: rgba(0, 0, 0, 0.68);
 }
 
 @media (max-width: 480px) {

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A sphinx theme",
   "scripts": {
-    "build": "cleancss assets/index.css -o sphinx_typlog_theme/static/theme.css"
+    "build": "cleancss assets/index.css -o sphinx_typlog_theme/static/typlog.css"
   },
   "author": "",
   "license": "",

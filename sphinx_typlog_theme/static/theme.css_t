@@ -1,0 +1,6 @@
+{% if theme_color %}
+.site-head a:hover {
+  color: {{ theme_color }};
+  border-color: {{ theme_color }};
+}
+{% endif %}

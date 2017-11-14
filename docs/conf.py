@@ -50,7 +50,15 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'sphinx_typlog_theme'
-html_theme_options = {}
+html_theme_options = {
+    'color': '#E8371A',
+    'navs': [
+        {
+            'url': 'https://github.com/typlog',
+            'title': 'GitHub'
+        }
+    ]
+}
 html_theme_path = [".."]
 
 # Add any paths that contain custom static files (such as style sheets) here,
