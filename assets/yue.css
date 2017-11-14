@@ -1,0 +1,250 @@
+.yue h1,
+.yue h2,
+.yue h3,
+.yue h4,
+.yue h5,
+.yue h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+  color: rgba(0, 0, 0, 0.98);
+}
+
+.yue h1 {
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 0.8em 0;
+}
+
+.yue h2 {
+  font-weight: 700;
+  font-size: 1.42em;
+  margin: 1.42em 0 0.4em;
+}
+
+.yue h3 {
+  font-size: 1.17em;
+  margin: 1.62em 0 0.4em;
+}
+
+.yue h4,
+.yue h5,
+.yue h6 {
+  font-size: 1em;
+  margin: 1.6em 0 0.6em;
+}
+
+.yue h6 {
+  font-weight: 500;
+}
+
+.yue p {
+  margin-top: 0;
+  margin-bottom: 1.12em;
+  hyphens: auto;
+}
+
+.yue a {
+  color: rgba(0, 0, 0, 0.98);
+  word-wrap: break-word;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.yue a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.yue h1 a, .yue h2 a, .yue h3 a {
+  text-decoration: none;
+}
+
+.yue strong,
+.yue b {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.yue em,
+.yue i {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.yue img,
+.yue video {
+  max-width: 100%;
+  height: auto;
+  margin: 0.2em 0;
+}
+
+.yue a img {
+  border: none;
+  vertical-align: middle;
+}
+
+.yue figure {
+  position: relative;
+  clear: both;
+  outline: 0;
+  margin: 10px 0 30px;
+  padding: 0;
+  min-height: 100px;
+}
+
+.yue figure img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.yue figcaption {
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.yue figcaption a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.yue hr {
+  display: block;
+  width: 90%;
+  max-width: 100px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  margin: 1.42em auto 1.84em;
+}
+
+.yue blockquote {
+  margin: 0 0 1.64em 0;
+  padding: 0 1em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.yue blockquote a {
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.yue ul,
+.yue ol {
+  margin: 0 0 24px 6px;
+  padding-left: 16px;
+}
+
+.yue ul {
+  list-style-type: square;
+}
+
+.yue ol {
+  list-style-type: decimal;
+}
+
+.yue li {
+  margin-bottom: 0.2em;
+}
+
+.yue li ul,
+.yue li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.yue li ul {
+  list-style-type: disc;
+}
+
+.yue li ul ul {
+  list-style-type: circle;
+}
+
+.yue li p {
+  margin: 0.4em 0 0.6em;
+}
+
+.yue code,
+.yue tt {
+  color: #808080;
+  font-size: 0.96em;
+  padding: 1px 2px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  word-wrap: break-word;
+}
+
+.yue pre {
+  margin: 1.64em 0;
+  padding: 7px 7px 7px 10px;
+  border: none;
+  border-left: 3px solid rgba(0, 0, 0, 0.08);
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.86em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: rgba(0, 0, 0, 0.68);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.yue pre code,
+.yue pre tt {
+  color: rgba(0, 0, 0, 0.68);
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.yue table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em;
+  font-size: 0.96em;
+  box-sizing: border-box;
+}
+
+.yue iframe {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.yue figure iframe {
+  margin: auto;
+}
+
+.yue table pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.yue blockquote {
+  position: relative;
+  padding: 24px 24px 18px 38px;
+  margin: 2em 0;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+}
+
+.yue blockquote:before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  content: '“';
+  font: bold 36px/1 "Georgia", serif;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+[lang^="en"] .yue h1 {
+  font-weight: 900;
+}

@@ -20,6 +20,58 @@ div.code-block-caption:hover > a.headerlink {
   visibility: visible;
 }
 
+.admonition {
+  position: relative;
+  padding: 40px 24px 18px 24px;
+  margin: 2em 0;
+  border-left: 4px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.admonition:before {
+  position: absolute;
+  content: '!';
+  top: 14px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.admonition > .admonition-title {
+  position: absolute;
+  margin: 0;
+  top: 12px;
+  left: 24px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.admonition > .last {
+  margin-bottom: 0;
+}
+
+.admonition.note {
+  border-color: #03A9F4;
+}
+.admonition.note:before {
+  background-color: #03A9F4;
+}
+
+.admonition.warning {
+  border-color: #F7BA2A;
+}
+.admonition.warning:before {
+  background-color: #F7BA2A;
+}
+
 .button {
   display: inline-block;
   padding: 1.2em 2em;

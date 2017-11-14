@@ -1,5 +1,8 @@
 {% if theme_color %}
-.site-head a:hover {
+a:hover,
+.yue a:hover,
+.site-head a:hover,
+.sidebar a:hover {
   color: {{ theme_color }};
   border-color: {{ theme_color }};
 }

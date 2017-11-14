@@ -77,16 +77,53 @@ a {
 
 .main {
   display: flex;
-  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .sidebar {
   padding: 10px 15px;
-  flex-basis: 230px;
+  flex: 0 0 300px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.sidebar a:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin: 1em 0 0.2em;
+  letter-spacing: -0.06em;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+}
+
+.sidebar h3 > a {
+  border-bottom-width: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li > ul {
+  padding-left: 1em;
+}
+
+.sidebar li > a {
+  text-decoration: none;
+  border-bottom-width: 2px;
 }
 
 .content {
   flex-grow: 1;
+  padding: 0 20px;
 }
 
 @media (max-width: 480px) {

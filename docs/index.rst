@@ -3,18 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Sphinx Typlog Theme's documentation!
-===============================================
+Sphinx Typlog Theme
+===================
+
+.. note::
+   A sphinx theme designed by `Typlog <https://typlog.com>`_.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   intro
+   guide
+   options
+   markup
+   changelog
