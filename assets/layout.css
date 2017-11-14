@@ -16,11 +16,12 @@ h1, h2, h3, strong {
 
 a {
   color: rgba(0, 0, 0, 0.86);
+  text-decoration: none;
 }
 
 .inner {
-  max-width: 960px;
-  padding: 0 16px;
+  max-width: 1080px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -124,6 +125,12 @@ a {
 .content {
   flex-grow: 1;
   padding: 0 20px;
+}
+
+.content > footer {
+  font-size: 0.86em;
+  color: #999;
+  padding: 20px 0;
 }
 
 @media (max-width: 480px) {

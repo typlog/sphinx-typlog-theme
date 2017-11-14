@@ -1,5 +1,7 @@
-Theme Options
-=============
+.. _options:
+
+Options
+=======
 
 Logo
 ----
