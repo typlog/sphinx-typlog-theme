@@ -1,0 +1,88 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 16px/1.42 "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1, h2, h3, strong {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+a {
+  color: rgba(0, 0, 0, 0.86);
+}
+
+.inner {
+  max-width: 960px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.inner:after,
+.site-nav:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.site-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.site-head .brand {
+  float: left;
+  display: block;
+  font-size: 18px;
+  padding: 18px 0;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.site-head .site-nav {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+}
+
+.site-nav li + li {
+  margin-left: 30px;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 20px 0 17px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.86);
+  letter-spacing: 0.01em;
+  border-bottom: 3px solid transparent;
+  transition: color,border-color 0.2s ease;
+}
+
+.site-head a:hover {
+  color: #3E7FCB;
+  border-color: #3E7FCB;
+}
+
+@media (max-width: 480px) {
+  .site-head {
+    text-align: center;
+  }
+  .site-head .brand {
+    float: none;
+  }
+  .site-head .site-nav {
+    float: none;
+  }
+}

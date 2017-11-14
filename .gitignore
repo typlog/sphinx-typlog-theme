@@ -2,3 +2,6 @@
 build/
 dist/
 docs/_build
+node_modules/
+theme.css
+package-lock.json
