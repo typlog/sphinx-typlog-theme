@@ -3,6 +3,7 @@ a.headerlink {
   color: rgba(0, 0, 0, 0.24);
   text-decoration: none;
   visibility: hidden;
+  border-width: 0;
 }
 a.headerlink:hover {
   background-color: rgba(0, 0, 0, 0.02);
@@ -30,7 +31,7 @@ div.code-block-caption:hover > a.headerlink {
 
 .admonition:before {
   position: absolute;
-  content: '!';
+  content: '#';
   top: 14px;
   left: -12px;
   color: #fff;
@@ -39,10 +40,7 @@ div.code-block-caption:hover > a.headerlink {
   border-radius: 100%;
   background-color: #ddd;
   text-align: center;
-  line-height: 20px;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
 }
 
 .admonition > .admonition-title {
@@ -51,6 +49,7 @@ div.code-block-caption:hover > a.headerlink {
   top: 12px;
   left: 24px;
   font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
 }
 
@@ -67,9 +66,45 @@ div.code-block-caption:hover > a.headerlink {
 
 .admonition.warning {
   border-color: #F7BA2A;
+  background-color: rgba(247, 186, 42, 0.1);
 }
 .admonition.warning:before {
   background-color: #F7BA2A;
+}
+.admonition.warning > .admonition-title {
+  font-weight: 700;
+  color: #F1B52A;
+}
+
+.versionmodified {
+  color: rgba(0, 0, 0, 0.86);
+  font-weight: 700;
+}
+
+.deprecated {
+  position: relative;
+  padding: 12px 24px;
+  margin: 2em 0;
+  border-left: 4px solid #FF612F;
+  background-color: rgba(255, 92, 47, 0.1);
+}
+
+.deprecated:before {
+  position: absolute;
+  content: '!';
+  top: 12px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #FF612F;
+  text-align: center;
+  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
+}
+
+.deprecated > p {
+  margin: 0;
 }
 
 .button {

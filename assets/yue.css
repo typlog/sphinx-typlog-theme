@@ -182,13 +182,13 @@
 
 .yue pre {
   margin: 1.64em 0;
-  padding: 7px 7px 7px 10px;
+  padding: 16px 16px 16px 18px;
   border: none;
   border-left: 3px solid rgba(0, 0, 0, 0.08);
   overflow: auto;
   line-height: 1.5;
-  font-size: 0.86em;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.98em;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
   color: rgba(0, 0, 0, 0.68);
   background-color: rgba(0, 0, 0, 0.02);
 }

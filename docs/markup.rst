@@ -16,3 +16,11 @@ Admonition
 
 .. deprecated:: 3.1
    Use :func:`spam` instead.
+
+Code Block
+----------
+
+Here is an example::
+
+  def hello(name='world'):
+      return 'Hello {}'.format(name)
