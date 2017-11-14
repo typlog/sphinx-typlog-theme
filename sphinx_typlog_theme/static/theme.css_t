@@ -6,4 +6,8 @@ a:hover,
   color: {{ theme_color }};
   border-color: {{ theme_color }};
 }
+
+.button:hover {
+  background-color: {{ theme_color }};
+}
 {% endif %}

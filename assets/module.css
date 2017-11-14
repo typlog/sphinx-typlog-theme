@@ -124,6 +124,27 @@ a > .std-ref {
   transition: background-color 100ms;
 }
 
-.button:hover {
-  background-color: #3E7FCB;
+.input-group {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.86);
+}
+
+.input-group > input[type="text"] {
+  flex-grow: 1;
+  outline: none;
+  border: 0;
+  padding: 4px 6px;
+}
+
+.input-group > button {
+  display: inline-block;
+  padding: 0 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.86);
+  border: 0;
+  transition: background-color 100ms;
+  cursor: pointer;
 }
