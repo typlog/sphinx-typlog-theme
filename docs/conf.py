@@ -52,12 +52,16 @@ todo_include_todos = False
 html_theme = 'sphinx_typlog_theme'
 html_theme_options = {
     'color': '#E8371A',
+    'logo': 'typlog-512.png',
     'navs': [
         {
             'url': 'https://github.com/typlog',
             'title': 'GitHub'
         }
-    ]
+    ],
+    'description': 'A sphinx theme designed by Typlog.',
+    'github_user': 'lepture',
+    'github_repo': 'mistune',
 }
 html_theme_path = [".."]
 
@@ -68,6 +72,7 @@ html_static_path = ['_static']
 
 html_sidebars = {
     '**': [
+        'project.html',
         'localtoc.html',
         'relations.html',
         'searchbox.html',

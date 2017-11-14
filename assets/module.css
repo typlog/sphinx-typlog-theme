@@ -126,14 +126,14 @@ a > .std-ref {
 
 .input-group {
   display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.86);
+  border: 2px solid rgba(0, 0, 0, 0.86);
 }
 
 .input-group > input[type="text"] {
   flex-grow: 1;
   outline: none;
   border: 0;
-  padding: 4px 6px;
+  padding: 0.6em 10px;
 }
 
 .input-group > button {
@@ -147,4 +147,11 @@ a > .std-ref {
   border: 0;
   transition: background-color 100ms;
   cursor: pointer;
+}
+
+.highlighted {
+  padding: 1px 4px;
+  opacity: 0.6;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.68);
 }

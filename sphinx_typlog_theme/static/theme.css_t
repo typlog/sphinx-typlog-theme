@@ -10,4 +10,8 @@ a:hover,
 .button:hover {
   background-color: {{ theme_color }};
 }
+
+.highlighted {
+  background-color: {{ theme_color }};
+}
 {% endif %}

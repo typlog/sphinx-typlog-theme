@@ -79,18 +79,19 @@ a {
 .main {
   display: flex;
   max-width: 1100px;
+  padding-top: 20px;
   margin: 0 auto;
 }
 
 .sidebar {
-  padding: 10px 15px;
-  flex: 0 0 300px;
-  width: 300px;
+  padding: 10px 30px 10px 15px;
+  flex: 0 0 260px;
   box-sizing: border-box;
 }
 
 .sidebar a {
   text-decoration: none;
+  color: #334433;
   border-bottom: 1px solid transparent;
 }
 .sidebar a:hover {
@@ -100,9 +101,12 @@ a {
 .sidebar h3 {
   margin: 1em 0 0.2em;
   letter-spacing: -0.06em;
+  color: #252b31;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
 }
 
+.sidebar h1 > a,
+.sidebar h2 > a,
 .sidebar h3 > a {
   border-bottom-width: 0;
 }
@@ -113,6 +117,10 @@ a {
   padding: 0;
 }
 
+.sidebar li {
+  margin-top: 4px;
+}
+
 .sidebar li > ul {
   padding-left: 1em;
 }
@@ -120,6 +128,39 @@ a {
 .sidebar li > a {
   text-decoration: none;
   border-bottom-width: 2px;
+}
+
+.project {
+  padding: 1em 0;
+}
+
+.project_desc {
+  margin: 0 0 1em;
+  line-height: 1.2;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #9ea0a6;
+}
+
+.project > h1 {
+  margin: 0.6em 0;
+  font-size: 1.8em;
+}
+
+.project > a {
+  border-width: 0;
+}
+
+.project .logo {
+  display: block;
+}
+
+.project .logo > img {
+  width: 80%;
+}
+
+.project .logo + h1 {
+  font-size: 18px;
 }
 
 .content {

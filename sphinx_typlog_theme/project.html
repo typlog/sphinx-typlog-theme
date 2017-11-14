@@ -1,0 +1,18 @@
+<div class="project">
+  {%- if theme_logo -%}
+    <a class="logo" href="{{ pathto(master_doc) }}">
+      <img src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
+    </a>
+  {%- endif -%}
+  {%- if not theme_logo or theme_logo_name %}
+    <h1><a href="{{ pathto(master_doc) }}">{{ project }}</a></h1>
+  {%- endif %}
+  {%- if theme_description %}
+    <div class="project_desc">{{ theme_description }}</div>
+  {%- endif %}
+  {%- if theme_github_user %}
+    {% if theme_github_repo %}
+      <iframe src="https://ghbtns.com/github-btn.html?user={{ theme_github_user }}&repo={{ theme_github_repo }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    {% endif %}
+  {%- endif %}
+</div>
