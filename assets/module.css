@@ -1,3 +1,25 @@
+a.headerlink {
+  margin-left: 1px;
+  color: rgba(0, 0, 0, 0.24);
+  text-decoration: none;
+  visibility: hidden;
+}
+a.headerlink:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink,
+caption:hover > a.headerlink,
+p.caption:hover > a.headerlink,
+div.code-block-caption:hover > a.headerlink {
+  visibility: visible;
+}
+
 .button {
   display: inline-block;
   padding: 1.2em 2em;

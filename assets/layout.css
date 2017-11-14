@@ -75,6 +75,20 @@ a {
   border-color: rgba(0, 0, 0, 0.68);
 }
 
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  padding: 10px 15px;
+  flex-basis: 230px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
 @media (max-width: 480px) {
   .site-head {
     text-align: center;
