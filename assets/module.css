@@ -74,6 +74,7 @@ a > .std-ref {
   background-color: rgba(247, 186, 42, 0.1);
 }
 .admonition.warning:before {
+  content: '!';
   background-color: #F7BA2A;
 }
 .admonition.warning > .admonition-title {
@@ -115,6 +116,7 @@ a > .std-ref {
   background-color: rgba(73, 199, 132, 0.08);
 }
 .versionadded:before {
+  content: '#';
   background-color: #49C784;
 }
 .versionchanged {

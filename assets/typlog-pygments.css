@@ -22,7 +22,7 @@
 .highlight .n { color: #000000 } /* Name */
 .highlight .o { color: #ce5c00; font-weight: bold } /* Operator */
 .highlight .x { color: #000000 } /* Other */
-.highlight .p { color: #000000; font-weight: bold } /* Punctuation */
+.highlight .p { color: #000000 } /* Punctuation */
 
 .highlight .gd { color: #a40000 } /* Generic.Deleted */
 .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
