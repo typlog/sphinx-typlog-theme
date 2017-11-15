@@ -62,6 +62,7 @@ html_theme_options = {
     'description': 'A sphinx theme designed by Typlog.',
     'github_user': 'lepture',
     'github_repo': 'mistune',
+    'meta_html': '<meta name="generator" content="sphinx">',
 }
 html_theme_path = [".."]
 

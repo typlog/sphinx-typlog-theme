@@ -65,7 +65,9 @@
       <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}"/>
     {%- endif %}
   {%- endblock %}
+  <script>{% include "ga.js" %}</script>
   {%- include "scripts.html" %}
+  {%- if theme_meta_html %}{{ theme_meta_html }}{% endif %}
   {%- block extrahead %}{% endblock %}
 </head>
 <body role="document" data-page="{{ pagename }}">
