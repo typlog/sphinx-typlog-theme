@@ -2,13 +2,14 @@
 
 import codecs
 from setuptools import setup
+from sphinx_typlog_theme import __version__
 
 with codecs.open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
     name='sphinx_typlog_theme',
-    version='0.1',
+    version=__version__,
     description='A typlog Sphinx theme',
     long_description=readme,
     author='Hsiaoming Yang',
