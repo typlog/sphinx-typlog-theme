@@ -84,6 +84,3 @@ Let's try a link https://lepture.com.
 
 API References
 --------------
-
-.. autoclass:: flask.Flask
-   :members:
