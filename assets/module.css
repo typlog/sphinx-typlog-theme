@@ -63,6 +63,7 @@ a > .std-ref {
 
 .admonition.note {
   border-color: #03A9F4;
+  background-color: rgba(3, 172, 244, 0.08);
 }
 .admonition.note:before {
   background-color: #03A9F4;
@@ -85,28 +86,53 @@ a > .std-ref {
   font-weight: 700;
 }
 
+.versionadded,
+.versionchanged,
 .deprecated {
   position: relative;
-  padding: 12px 24px;
-  margin: 2em 0;
-  border-left: 4px solid #FF612F;
-  background-color: rgba(255, 92, 47, 0.1);
+  padding: 8px 24px;
+  margin: 1em 0;
+  border-left: 4px solid transparent;
 }
 
+.versionadded:before,
+.versionchanged:before,
 .deprecated:before {
   position: absolute;
   content: '!';
-  top: 12px;
+  top: 8px;
   left: -12px;
   color: #fff;
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: #FF612F;
   text-align: center;
   font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
 }
 
+.versionadded {
+  border-color: #49C784;
+  background-color: rgba(73, 199, 132, 0.08);
+}
+.versionadded:before {
+  background-color: #49C784;
+}
+.versionchanged {
+  border-color: #F7BA2A;
+  background-color: rgba(247, 186, 42, 0.08);
+}
+.versionchanged:before {
+  background-color: #F7BA2A;
+}
+.deprecated {
+  border-color: #FF612F;
+  background-color: rgba(255, 92, 47, 0.08);
+}
+.deprecated:before {
+  background-color: #FF612F;
+}
+
+.versionadded > p,
 .deprecated > p {
   margin: 0;
 }

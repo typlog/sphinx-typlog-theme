@@ -6,6 +6,10 @@ This page is showing markup styles, they have no meanings.
 Admonition
 ----------
 
+.. admonition:: Debug Note
+
+   The default admonition has no colors. It is gray.
+
 .. note::
    This page is showing markup styles, they have no meanings.
 
@@ -76,3 +80,10 @@ Inline Style
 A plain text mixed with **bold** and *italic*. And we have ``code`` too.
 
 Let's try a link https://lepture.com.
+
+
+API References
+--------------
+
+.. autoclass:: flask.Flask
+   :members:

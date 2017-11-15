@@ -166,12 +166,21 @@ a {
 .content {
   flex-grow: 1;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .content > footer {
   font-size: 0.86em;
   color: #999;
   padding: 20px 0;
+}
+
+.content > footer:before {
+  display: block;
+  margin-bottom: 1em;
+  content: '';
+  width: 100px;
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {
@@ -183,5 +192,9 @@ a {
   }
   .site-head .site-nav {
     float: none;
+  }
+  /* TODO: real responsive */
+  .sidebar {
+    display: none;
   }
 }

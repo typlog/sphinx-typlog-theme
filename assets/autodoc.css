@@ -1,0 +1,31 @@
+code.descname {
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.class dt > em,
+.method dt> em {
+  font-size: 0.98em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+dd {
+  margin: 4px 0 10px 2em;
+}
+
+dd > table.field-list .field-name {
+  display: block;
+  font-size: 0.86em;
+  color: rgba(0, 0, 0, 0.24);
+  padding: 0;
+  text-align: left;
+}
+
+dd > table.field-list .field-body {
+  display: block;
+  padding: 0 0 0 1em;
+}
+
+.yue dd > p {
+  margin-bottom: 0.86em;
+}

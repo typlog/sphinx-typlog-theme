@@ -1,4 +1,8 @@
 {% if theme_color %}
+::selection {
+  color: white;
+  background-color: {{ theme_color }};
+}
 a:hover,
 .yue a:hover,
 .site-head a:hover,

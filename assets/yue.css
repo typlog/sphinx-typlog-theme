@@ -178,12 +178,12 @@
   font-size: 0.96em;
   padding: 1px 4px;
   border-radius: 2px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
   word-wrap: break-word;
 }
 
 .yue pre {
-  margin: 1.64em 0;
+  margin: 1.4em 0;
   padding: 16px 16px 16px 18px;
   border: none;
   border-left: 3px solid rgba(0, 0, 0, 0.08);
@@ -249,4 +249,19 @@
 
 [lang^="en"] .yue h1 {
   font-weight: 900;
+}
+
+.yue table[border] th,
+.yue table[border] td {
+  text-align: left;
+  padding: 4px 8px 4px 10px;
+  border: 1px solid #ddd;
+}
+
+.yue table[border] td {
+  vertical-align: top;
+}
+
+.yue table[border] tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.01);
 }
