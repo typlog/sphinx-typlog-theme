@@ -162,6 +162,7 @@ a > .std-ref {
   padding: 0.6em 10px;
 }
 
+body[data-page="search"] input[type="submit"],
 .input-group > button {
   display: inline-block;
   padding: 0 0.8em;
@@ -180,4 +181,16 @@ a > .std-ref {
   opacity: 0.6;
   color: white;
   background-color: rgba(0, 0, 0, 0.68);
+}
+
+body[data-page="search"] input[name="q"] {
+  border: 2px solid rgba(0, 0, 0, 0.86);
+  padding: 0 10px;
+  line-height: 38px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body[data-page="search"] input[type="submit"] {
+  line-height: 42px;
 }

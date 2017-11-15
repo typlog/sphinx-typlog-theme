@@ -68,7 +68,7 @@
   {%- include "scripts.html" %}
   {%- block extrahead %}{% endblock %}
 </head>
-<body role="document">
+<body role="document" data-page="{{ pagename }}">
   <header class="site-head">
     <div class="inner">
       <a class="brand" href="{{ pathto(master_doc) }}">{{project}}</a>

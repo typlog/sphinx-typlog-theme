@@ -1,4 +1,4 @@
-.PHONY: docs css
+.PHONY: docs
 
 docs:
 	@rm -fr docs/_build
