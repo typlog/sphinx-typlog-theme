@@ -49,6 +49,10 @@ a {
   float: right;
 }
 
+.site-head .menu {
+  display: none;
+}
+
 .site-nav ul {
   list-style-type: none;
   margin: 0;
@@ -86,8 +90,8 @@ a {
 }
 
 .sidebar {
-  padding: 10px 30px 10px 15px;
   flex: 0 0 260px;
+  padding: 10px 30px 10px 15px;
   box-sizing: border-box;
 }
 
@@ -193,6 +197,23 @@ a {
     float: none;
     padding: 5px 0;
   }
+  .site-head .menu {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 4px 6px;
+    border-radius: 2px;
+    outline: none;
+  }
+  .site-head .menu:before {
+    content: '→';
+  }
+  .expand .site-head .menu:before {
+    content: '←';
+  }
   .site-head .site-nav {
     float: none;
     max-height: 45px;
@@ -210,8 +231,28 @@ a {
   .site-nav a {
     padding: 10px 0;
   }
-  /* TODO: real responsive */
+  .main {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
   .sidebar {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 9;
+    width: 85%;
+    max-width: 320px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transform: translate3d(-340px, 0, 0);
+    transition: transform 0.2s ease;
+  }
+  .expand .sidebar {
+    transform: translate3d(0, 0, 0);
+  }
+  .project .logo>img {
+    width: 50%;
   }
 }

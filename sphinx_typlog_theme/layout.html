@@ -74,6 +74,7 @@
   <header class="site-head">
     <div class="inner">
       <div class="brand">
+        <button class="menu" aria-label="Menu"></button>
         <a href="{{ pathto(master_doc) }}">{{project}}</a>
       </div>
       {%- if theme_navs %}
@@ -111,5 +112,6 @@
       {%- endblock %}
     </div>
   </div>
+  <script>$('button.menu').on('click',function(){$('body').toggleClass('expand')})</script>
 </body>
 </html>
