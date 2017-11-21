@@ -73,13 +73,17 @@
 <body role="document" data-page="{{ pagename }}">
   <header class="site-head">
     <div class="inner">
-      <a class="brand" href="{{ pathto(master_doc) }}">{{project}}</a>
+      <div class="brand">
+        <a href="{{ pathto(master_doc) }}">{{project}}</a>
+      </div>
       {%- if theme_navs %}
-      <ul class="site-nav">
-        {%- for nav in theme_navs %}
+      <div class="site-nav">
+        <ul>
+          {%- for nav in theme_navs %}
           <li><a href="{{nav.url}}">{{nav.title}}</a></li>
-        {%- endfor %}
-      </ul>
+          {%- endfor %}
+        </ul>
+      </div>
       {%- endif %}
     </div>
   </header>

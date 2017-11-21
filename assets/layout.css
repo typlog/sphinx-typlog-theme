@@ -41,13 +41,15 @@ a {
   display: block;
   font-size: 18px;
   padding: 18px 0;
-  text-decoration: none;
   font-weight: 900;
   letter-spacing: 1px;
 }
 
 .site-head .site-nav {
   float: right;
+}
+
+.site-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -189,9 +191,24 @@ a {
   }
   .site-head .brand {
     float: none;
+    padding: 5px 0;
   }
   .site-head .site-nav {
     float: none;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .site-nav ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2em;
+    -webkit-overflow-scrolling: touch;
+  }
+  .site-nav li + li {
+    margin-left: 16px;
+  }
+  .site-nav a {
+    padding: 10px 0;
   }
   /* TODO: real responsive */
   .sidebar {

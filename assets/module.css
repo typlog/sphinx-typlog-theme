@@ -176,6 +176,8 @@ body[data-page="search"] input[type="submit"],
   border: 0;
   transition: background-color 100ms;
   cursor: pointer;
+  border-radius: 0;
+  outline: none;
 }
 
 .highlighted {
