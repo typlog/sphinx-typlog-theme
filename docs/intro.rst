@@ -1,6 +1,9 @@
 Introduction
 ============
 
+.. meta::
+   :description: An introduction on sphinx typlog theme.
+
 Design
 ------
 
