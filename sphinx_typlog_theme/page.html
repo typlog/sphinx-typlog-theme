@@ -12,10 +12,8 @@
 {%- endmacro %}
 
 {%- macro og_meta() %}
-{%- set has_desc = false %}
 {%- for html in metatags.split('\n') %}
   {%- if 'name="description"' in html %}
-    {%- set has_desc = true %}
     {%- set text = strip_meta(html, 'description')|trim %}
     <meta property="og:description" content="{{ text }}">
   {%- elif 'name="image"' in html %}
@@ -23,16 +21,13 @@
     <meta property="og:image" content="{{ src }}">
   {%- endif %}
 {%- endfor %}
-{%- if not has_desc and theme_description %}
-<meta property="og:description" content="{{ theme_description }}">
-{%- endif %}
 {%- endmacro %}
 
 {% block extrahead %}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ project }}">
   <meta property="og:title" content="{{ title|striptags|e }}">
-  {%- if pagename == 'index' and theme_description %}
+  {%- if theme_description and 'name="description"' not in metatags %}
     <meta property="og:description" content="{{ theme_description }}">
   {%- else %}
     {{- og_meta() }}
