@@ -3,6 +3,13 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.3
+-----------
+
+**Released on Dec 24, 2017. Merry Christmas!**
+
+Add Open Graph and Twitter Cards for each page.
+
 Version 0.2
 -----------
 
