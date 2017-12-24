@@ -3,6 +3,13 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.3.1
+-------------
+
+**Released on Dec 24, 2017. Merry Christmas!**
+
+A quick fix for the ``og:description`` rendering.
+
 Version 0.3
 -----------
 
