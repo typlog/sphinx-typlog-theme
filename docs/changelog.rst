@@ -3,6 +3,13 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.3.2
+-------------
+
+**Released on Mar 12, 2018**
+
+Update styles for blockquote and code highlight.
+
 Version 0.3.1
 -------------
 
