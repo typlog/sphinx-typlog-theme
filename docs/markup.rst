@@ -29,8 +29,16 @@ Code
 
 Here is an example on code highlight::
 
+    @app.route('/', methods=['GET')
     def hello(name='world'):
         return 'Hello {}'.format(name)
+
+    class API(object):
+        """API docstring style"""
+
+        def __init__(self, request):
+            # comment
+            self.request = request
 
 Quote
 ~~~~~

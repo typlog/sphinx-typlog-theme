@@ -126,9 +126,19 @@
 }
 
 .yue blockquote {
-  margin: 0 0 1.64em 0;
-  padding: 0 1em;
+  position: relative;
+  padding: 10px 10px 10px 38px;
+  margin: 1em 0;
   color: rgba(0, 0, 0, 0.68);
+}
+
+.yue blockquote:before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  content: '“';
+  font: bold 48px/1 "Georgia", serif;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .yue blockquote a {
@@ -190,7 +200,7 @@
   overflow: auto;
   line-height: 1.5;
   font-size: 0.98em;
-  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-family: Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   color: rgba(0, 0, 0, 0.68);
   background-color: rgba(0, 0, 0, 0.02);
 }
@@ -228,23 +238,6 @@
   padding: 0;
   border: none;
   background: none;
-}
-
-.yue blockquote {
-  position: relative;
-  padding: 24px 24px 18px 38px;
-  margin: 1.2em 0;
-  background-color: #f8f8f8;
-  border-radius: 2px;
-}
-
-.yue blockquote:before {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  content: '“';
-  font: bold 36px/1 "Georgia", serif;
-  color: rgba(0, 0, 0, 0.1);
 }
 
 [lang^="en"] .yue h1 {

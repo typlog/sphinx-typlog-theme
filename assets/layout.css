@@ -258,7 +258,9 @@ a {
   }
 }
 
-body[data-page="search"] input[name="q"] {
+
+body[data-page="search"] input[name="q"],
+.rst-other-versions input[name="q"] {
   border: 2px solid rgba(0, 0, 0, 0.86);
   padding: 0 10px;
   line-height: 38px;
@@ -268,4 +270,8 @@ body[data-page="search"] input[name="q"] {
 
 body[data-page="search"] input[type="submit"] {
   line-height: 42px;
+}
+
+.rst-other-versions input[name="q"] {
+  border: 0;
 }
