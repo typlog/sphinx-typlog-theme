@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
   {%- endif %}
-  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto('_static/theme.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}?v={{ theme_version }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto('_static/theme.css', 1) }}?v={{ theme_version }}" type="text/css" />
   {%- for cssfile in css_files -%}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {%- endfor %}
