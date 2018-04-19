@@ -138,5 +138,10 @@ Let's have a preview of what badges look like:
 * :badge-green:`√`
 
 
+GitHub
+------
+
+* Feature request at :gh:`issue#1`.
+
 API References
 --------------

@@ -3,7 +3,8 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-from sphinx_typlog_theme import __version__, add_badge_roles
+from sphinx_typlog_theme import __version__
+from sphinx_typlog_theme import add_badge_roles, add_github_roles
 
 extensions = ['sphinx.ext.autodoc']
 
@@ -62,7 +63,7 @@ html_theme_options = {
     ],
     'description': 'A sphinx theme designed by Typlog.',
     'github_user': 'lepture',
-    'github_repo': 'mistune',
+    'github_repo': 'authlib',
     'meta_html': '<meta name="generator" content="sphinx">',
 }
 html_theme_path = [".."]
@@ -84,3 +85,4 @@ html_sidebars = {
 
 def setup(app):
     add_badge_roles(app)
+    add_github_roles(app, 'lepture/authlib')

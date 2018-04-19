@@ -36,6 +36,33 @@ def add_badge_roles(app):
     app.add_role('badge-yellow', create_badge_role('yellow'))
 
 
+def add_github_roles(app, repo):
+    from docutils.nodes import reference
+    from docutils.parsers.rst.roles import set_classes
+
+    base_url = 'https://github.com/{}'.format(repo)
+
+    def github_role(name, rawtext, text, lineno, inliner,
+                    options=None, content=None):
+        if '#' in text:
+            t, n = text.split('#', 1)
+            if t.lower() in ['issue', 'issues']:
+                url = base_url + '/issues/{}'.format(n)
+            elif t.lower() in ['pr', 'pull', 'pull request']:
+                url = base_url + '/pull/{}'.format(n)
+            elif t.lower() in ['commit', 'commits']:
+                url = base_url + '/commit/{}'.format(n)
+        else:
+            url = base_url + '/' + text
+
+        options = options or {'classes': ['gh']}
+        set_classes(options)
+        node = reference(rawtext, text, refuri=url, **options)
+        return [node], []
+
+    app.add_role('gh', github_role)
+
+
 def setup(app):
     # add_html_theme is new in Sphinx 1.6+
     if hasattr(app, 'add_html_theme'):
