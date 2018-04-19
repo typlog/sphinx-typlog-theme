@@ -89,6 +89,17 @@ A plain text mixed with **bold** and *italic*. And we have ``code`` too.
 
 Let's try a link https://lepture.com.
 
+Badges
+------
+
+Let's have a preview of what badges look like:
+
+* :badge:`done` Add badge role
+* :badge:`todo` Add more badge features
+* :badge:`doing` Things that in plan
+* :badge-red:`remove` Some feature has been removed
+* :badge-green:`√`
+
 
 API References
 --------------

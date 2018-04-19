@@ -194,3 +194,41 @@ body[data-page="search"] input[type="submit"],
 .float-right {
   float: right;
 }
+
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  min-width: 3em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #999;
+  color: white;
+  line-height: 1;
+  border-radius: 2px;
+  font-size: 13px;
+  opacity: 0.98;
+  margin-right: 4px;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  user-select: none;
+}
+.badge-one {
+  font-size: 12px;
+  min-width: 0;
+  padding: 4px 6px;
+}
+.badge-todo,
+.badge-yellow {
+  background-color: rgba(247, 186, 42);
+}
+.badge-done,
+.badge-green {
+  background-color: rgba(73, 199, 132);
+}
+.badge-plan,
+.badge-doing,
+.badge-blue {
+  background-color: rgba(3, 172, 244);
+}
+.badge-red {
+  background-color: #FF612F;
+}

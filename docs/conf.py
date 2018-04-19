@@ -3,7 +3,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-from sphinx_typlog_theme import __version__
+from sphinx_typlog_theme import __version__, add_badge_roles
 
 extensions = ['sphinx.ext.autodoc']
 
@@ -80,3 +80,7 @@ html_sidebars = {
         'searchbox.html',
     ]
 }
+
+
+def setup(app):
+    add_badge_roles(app)
