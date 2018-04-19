@@ -46,6 +46,10 @@ a > .std-ref {
   text-align: center;
   font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
 }
+.admonition.tip:before {
+  content: 'T';
+  font-size: 12px;
+}
 
 .admonition > .admonition-title {
   position: absolute;
@@ -61,25 +65,90 @@ a > .std-ref {
   margin-bottom: 0;
 }
 
-.admonition.note {
+.admonition.note,
+.admonition.attention {
   border-color: #03A9F4;
   background-color: rgba(3, 172, 244, 0.08);
 }
-.admonition.note:before {
+.admonition.note:before,
+.admonition.attention:before {
   background-color: #03A9F4;
 }
+.admonition.attention:before {
+  content: '!';
+}
+.admonition.note > .admonition-title,
+.admonition.attention > .admonition-title {
+  font-weight: 700;
+  color: #03A9F4;
+}
 
-.admonition.warning {
+.admonition.warning,
+.admonition.caution {
   border-color: #F7BA2A;
   background-color: rgba(247, 186, 42, 0.1);
 }
-.admonition.warning:before {
+.admonition.warning:before,
+.admonition.caution:before {
   content: '!';
   background-color: #F7BA2A;
 }
-.admonition.warning > .admonition-title {
+.admonition.warning > .admonition-title,
+.admonition.caution > .admonition-title {
   font-weight: 700;
   color: #F1B52A;
+}
+
+.admonition.error,
+.admonition.danger {
+  border-color: #FF612F;
+  background-color: rgba(255, 92, 47, 0.08);
+}
+.admonition.error:before,
+.admonition.danger:before {
+  content: '!';
+  background-color: #FF612F;
+}
+.admonition.error > .admonition-title,
+.admonition.danger > .admonition-title {
+  font-weight: 700;
+  color: #FF612F;
+}
+
+.admonition.important{
+  border-color: #b37feb;
+  background-color: rgba(179, 127, 235, 0.1);
+}
+.admonition.important:before {
+  background-color: #b37feb;
+}
+.admonition.important > .admonition-title {
+  font-weight: 700;
+  color: #b37feb;
+}
+
+.admonition.hint {
+  border-color: #36cfc9;
+  background-color: rgba(8, 151, 156, 0.1);
+}
+.admonition.hint:before {
+  background-color: #36cfc9;
+}
+.admonition.hint > .admonition-title {
+  font-weight: 700;
+  color: #36cfc9;
+}
+
+.admonition.tip {
+  border-color: #f759ab;
+  background-color: rgba(247, 89, 171, 0.1);
+}
+.admonition.tip:before {
+  background-color: #f759ab;
+}
+.admonition.tip > .admonition-title {
+  font-weight: 700;
+  color: #f759ab;
 }
 
 .versionmodified {
@@ -135,6 +204,7 @@ a > .std-ref {
 }
 
 .versionadded > p,
+.versionchanged > p,
 .deprecated > p {
   margin: 0;
 }
@@ -185,6 +255,10 @@ body[data-page="search"] input[type="submit"],
   opacity: 0.6;
   color: white;
   background-color: rgba(0, 0, 0, 0.68);
+}
+
+p.centered {
+  text-align: center;
 }
 
 .float-left {

@@ -10,16 +10,53 @@ Admonition
 
    The default admonition has no colors. It is gray.
 
+.. attention:: Attention please!
+
+.. caution:: Attention please!
+
+.. danger:: This is a danger area.
+
+.. error:: This is an error message.
+
+.. hint:: This is hint message.
+
+.. important:: This is an impoartant message.
+
 .. note::
    This page is showing markup styles, they have no meanings.
 
    Oh. Except this message.
 
-.. warning::
-   Please don't do anything harmful to me.
+.. tip:: A small tip please.
+
+.. warning:: Please don't do anything harmful to me.
+
+
+Sphinx Admonition
+-----------------
+
+.. versionadded:: 2.5
+   The *spam* parameter.
+
+.. versionchanged:: 2.5
+   The *spam* parameter.
 
 .. deprecated:: 3.1
    Use :func:`spam` instead.
+
+.. seealso::
+   It is also available at https://typlog.com/
+
+.. centered:: LICENSE AGREEMENT
+
+.. hlist::
+   :columns: 3
+
+   * A list of
+   * short items
+   * that should be
+   * displayed
+   * horizontally
 
 Block Level
 -----------
