@@ -183,7 +183,7 @@
 
 .yue code,
 .yue tt {
-  background-color: #f8f8f8;
+  background-color: rgba(220, 220, 220, 0.2);
   color: #F55826;
   font-size: 0.96em;
   padding: 1px 4px;
