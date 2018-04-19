@@ -292,16 +292,16 @@ p.centered {
 }
 .badge-todo,
 .badge-yellow {
-  background-color: rgba(247, 186, 42);
+  background-color: #F7BA2A;
 }
 .badge-done,
 .badge-green {
-  background-color: rgba(73, 199, 132);
+  background-color: #49C784;
 }
 .badge-plan,
 .badge-doing,
 .badge-blue {
-  background-color: rgba(3, 172, 244);
+  background-color: #03A9F4;
 }
 .badge-red {
   background-color: #FF612F;
