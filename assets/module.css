@@ -257,6 +257,39 @@ body[data-page="search"] input[type="submit"],
   background-color: rgba(0, 0, 0, 0.68);
 }
 
+.highlight,
+.literal-block-wrapper {
+  margin: 1.4em 0;
+}
+
+.highlight pre,
+.literal-block-wrapper .highlight,
+.highlighttable .highlight {
+  margin: 0;
+}
+
+.code-block-caption {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.highlighttable {
+  background: rgba(0,0,0,.02);
+}
+.highlighttable .linenos {
+  width: 1px;
+}
+.highlighttable .linenodiv {
+  padding: 10px 6px;
+  background: rgba(0, 0, 0, 0.03);
+  text-align: right;
+}
+.highlighttable .linenodiv pre {
+  color: rgba(0, 0, 0, 0.3);
+}
+.highlighttable .highlight {
+  padding-left: 10px;
+}
+
 p.centered {
   text-align: center;
 }
@@ -305,4 +338,23 @@ p.centered {
 }
 .badge-red {
   background-color: #FF612F;
+}
+
+.sponsor {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.sponsor img {
+  width: 48px;
+  vertical-align: middle;
+}
+.sponsor a.sponsor_image {
+  float: left;
+  border-bottom: none;
+}
+.sponsor_text {
+  overflow: hidden;
+  padding-left: 10px;
 }

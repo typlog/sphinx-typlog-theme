@@ -57,6 +57,10 @@ html_theme_options = {
     'logo': 'typlog-512.png',
     'navs': [
         {
+            'url': 'https://typlog.com',
+            'title': 'Typlog'
+        },
+        {
             'url': 'https://github.com/typlog',
             'title': 'GitHub'
         }
@@ -78,6 +82,7 @@ html_sidebars = {
         'project.html',
         'localtoc.html',
         'relations.html',
+        'sponsors.html',
         'searchbox.html',
     ]
 }

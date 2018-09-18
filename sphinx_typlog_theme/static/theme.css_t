@@ -18,4 +18,8 @@ a:hover,
 .highlighted {
   background-color: {{ theme_color }};
 }
+
+.sponsor_text a {
+  border-color: {{ theme_color }};
+}
 {% endif %}

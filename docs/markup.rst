@@ -77,6 +77,23 @@ Here is an example on code highlight::
             # comment
             self.request = request
 
+
+Using ``code-block`` with other options.
+
+.. code-block:: js
+    :caption: test.js
+
+    function test() {
+      console.log('hi');
+    }
+
+.. code-block:: rust
+    :linenos:
+
+    fn main() {
+        println!("Hello World!");
+    }
+
 Quote
 ~~~~~
 
