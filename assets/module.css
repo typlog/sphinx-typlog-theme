@@ -346,6 +346,11 @@ p.centered {
   margin: 20px 0;
   border-radius: 4px;
 }
+.sponsor:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 .sponsor img {
   width: 48px;
   vertical-align: middle;
@@ -357,4 +362,17 @@ p.centered {
 .sponsor_text {
   overflow: hidden;
   padding-left: 10px;
+  vertical-align: middle;
+}
+.content .sponsor,
+.content .sponsor_text {
+  display: inline-block;
+}
+.content .sponsor img {
+  width: auto;
+  height: 40px;
+}
+.content a.sponsor_image {
+  display: inline-block;
+  float: none;
 }

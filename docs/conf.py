@@ -4,7 +4,10 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 from sphinx_typlog_theme import __version__
-from sphinx_typlog_theme import add_badge_roles, add_github_roles
+from sphinx_typlog_theme import (
+    add_badge_roles,
+    add_github_roles,
+)
 
 extensions = ['sphinx.ext.autodoc']
 

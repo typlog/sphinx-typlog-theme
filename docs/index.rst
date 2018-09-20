@@ -7,7 +7,12 @@ Sphinx Typlog Theme
 ===================
 
 .. note::
-   A sphinx theme designed by `Typlog <https://typlog.com>`_.
+   A sphinx theme designed by Typlog_.
+
+.. raw:: html
+   :file: ../sphinx_typlog_theme/sponsors.html
+
+.. _Typlog: https://typlog.com/
 
 .. toctree::
    :maxdepth: 2
