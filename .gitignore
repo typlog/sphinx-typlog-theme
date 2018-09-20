@@ -3,5 +3,4 @@ build/
 dist/
 docs/_build
 node_modules/
-typlog.css
 package-lock.json

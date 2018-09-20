@@ -340,10 +340,13 @@ p.centered {
   background-color: #FF612F;
 }
 
+.sponsors {
+  margin: 15px 0;
+}
 .sponsor {
   background: rgba(0, 0, 0, 0.05);
   padding: 15px;
-  margin: 20px 0;
+  margin: 5px 0;
   border-radius: 4px;
 }
 .sponsor:after {
