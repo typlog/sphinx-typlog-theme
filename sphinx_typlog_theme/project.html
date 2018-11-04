@@ -12,7 +12,18 @@
   {%- endif %}
   {%- if theme_github_user %}
     {% if theme_github_repo %}
-      <iframe src="https://ghbtns.com/github-btn.html?user={{ theme_github_user }}&repo={{ theme_github_repo }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    <div>
+      <a class="github" href="https://github.com/{{ theme_github_user }}/{{ theme_github_repo }}" target="_blank">
+        <span class="github_icon"></span>
+        <span class="github_stars">
+          <strong>-</strong>stars
+        </span>
+        <span class="github_forks">
+          <strong>-</strong>forks
+        </span>
+      </a>
+    </div>
+    <script>{% include "js/github.js" %}</script>
     {% endif %}
   {%- endif %}
 </div>
