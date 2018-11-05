@@ -43,4 +43,16 @@
 
 {% block body %}
   {{ body }}
+  <div class="guide-links">
+    {%- if prev %}
+    <span>
+      ← <a href="{{ prev.link|e }}" title="{{ _('previous chapter') }}">{{ prev.title }}</a>
+    </span>
+    {%- endif %}
+    {%- if next %}
+    <span style="float:right">
+      <a href="{{ next.link|e }}" title="{{ _('next chapter') }}">{{ next.title }}</a> →
+    </span>
+    {%- endif %}
+  </div>
 {% endblock %}

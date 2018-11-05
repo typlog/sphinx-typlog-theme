@@ -17,7 +17,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Sphinx Typlog Theme'
+project = u'Typlog Theme'
 copyright = u'2017, Hsiaoming Yang'
 author = u'Hsiaoming Yang'
 
@@ -58,16 +58,6 @@ html_theme = 'sphinx_typlog_theme'
 html_theme_options = {
     'color': '#E8371A',
     'logo': 'typlog-512.png',
-    'navs': [
-        {
-            'url': 'https://typlog.com',
-            'title': 'Typlog'
-        },
-        {
-            'url': 'https://github.com/typlog',
-            'title': 'GitHub'
-        }
-    ],
     'description': 'A sphinx theme designed by Typlog.',
     'github_user': 'lepture',
     'github_repo': 'authlib',
@@ -82,7 +72,7 @@ html_static_path = ['_static']
 
 html_sidebars = {
     '**': [
-        'project.html',
+        'github.html',
         'localtoc.html',
         'relations.html',
         'sponsors.html',

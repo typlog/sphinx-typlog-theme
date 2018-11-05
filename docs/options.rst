@@ -46,18 +46,6 @@ Add a theme color, it will be shown as the hover color for links etc::
         'color': '#E8371A'
     }
 
-navs
-----
-
-Add links on the top navigation::
-
-    html_theme_options = {
-      'navs': [
-          {'url': 'https://github.com/lepture', 'title': 'GitHub'},
-          {'url': 'https://lepture.com/', 'title': 'Blog'},
-      ]
-    }
-
 github
 ------
 
@@ -84,7 +72,7 @@ There is a ``project.html`` template which you can use in sidebar::
 
     html_sidebars = {
         '**': [
-            'project.html',
+            'github.html',
             ...
         ]
     }

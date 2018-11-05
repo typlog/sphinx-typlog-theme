@@ -290,6 +290,10 @@ body[data-page="search"] input[type="submit"],
   padding-left: 10px;
 }
 
+.hlist td {
+  vertical-align: top;
+}
+
 p.centered {
   text-align: center;
 }
@@ -380,8 +384,10 @@ p.centered {
   float: none;
 }
 
-.project .github,
-.github {
+.github_wrap {
+  padding: 0 0 10px;
+}
+.github_wrap .github {
   display: inline-block;
   border: 1px solid #d5d5d5;
   background-image: linear-gradient(to bottom,#fcfcfc 0,#eee 100%);

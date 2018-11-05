@@ -72,47 +72,47 @@
   {%- block extrahead %}{% endblock %}
 </head>
 <body role="document" data-page="{{ pagename }}">
-  <header class="site-head">
-    <div class="inner">
-      <div class="brand">
-        <button class="menu" aria-label="Menu"></button>
-        <a href="{{ pathto(master_doc) }}">{{project}}</a>
-      </div>
-      {%- if theme_navs %}
-      <div class="site-nav">
-        <ul>
-          {%- for nav in theme_navs %}
-          <li><a href="{{nav.url}}">{{nav.title}}</a></li>
-          {%- endfor %}
-        </ul>
-      </div>
-      {%- endif %}
-    </div>
+  <header class="head">
+    <div class="head_menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"/></svg></div>
+    <a class="head_logo" href="{{ pathto(master_doc) }}">
+      {%- if theme_logo -%}
+      <img src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
+      {%- endif -%}
+      {{ project }}
+    </a>
   </header>
-  <div class="main">
-    <aside class="sidebar">
+  <aside class="sidebar">
+    <div class="mobile-close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"/></svg>
+    </div>
+    <div class="inner">
+      {% include "project.html" %}
       {%- if sidebars %}
         {%- for sidebartemplate in sidebars %}
           {%- include sidebartemplate %}
         {%- endfor %}
       {%- endif %}
-    </aside>
-    <div class="content">
-      <div class="body yue">{% block body %}{% endblock %}</div>
-      {%- block footer %}
-      <footer>
-        {%- if show_copyright %}
-          {%- if hasdoc('copyright') %}
-            {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-          {%- else %}
-            {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
-          {%- endif %}
-        {%- endif %}
-        A <a href="https://typlog.com/">Typlog</a> Theme.
-      </footer>
-      {%- endblock %}
     </div>
+  </aside>
+  <div class="content">
+    <div class="body yue">{% block body %}{% endblock %}</div>
+    {%- block footer %}
+    <footer>
+      {%- if show_copyright %}
+        {%- if hasdoc('copyright') %}
+          {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+        {%- else %}
+          {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+        {%- endif %}
+      {%- endif %}
+      A <a href="https://typlog.com/">Typlog</a> Theme.
+    </footer>
+    {%- endblock %}
   </div>
-  <script>$('button.menu').on('click',function(){$('body').toggleClass('expand')})</script>
+  <script>
+    $('.head_menu').on('click',function(){$('body').addClass('expand')});
+    $('.body').on('click',function(){$('body').removeClass('expand')});
+    $('.mobile-close').on('click',function(){$('body').removeClass('expand')});
+  </script>
 </body>
 </html>

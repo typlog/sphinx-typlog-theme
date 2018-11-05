@@ -19,81 +19,29 @@ a {
   text-decoration: none;
 }
 
-.inner {
-  max-width: 1080px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .section:after,
-.inner:after,
-.site-nav:after {
+.inner:after {
   display: table;
   content: '';
   clear: both;
 }
 
-.site-head {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.site-head .brand {
-  float: left;
-  display: block;
-  font-size: 18px;
-  padding: 18px 0;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.site-head .site-nav {
-  float: right;
-}
-
-.site-head .menu {
-  display: none;
-}
-
-.site-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.site-nav li {
-  display: inline-block;
-}
-
-.site-nav li + li {
-  margin-left: 30px;
-}
-
-.site-nav a {
-  display: inline-block;
-  padding: 20px 0 17px;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.86);
-  letter-spacing: 0.01em;
-  border-bottom: 3px solid transparent;
-  transition: color,border-color 0.2s ease;
-}
-
-.site-head a:hover {
-  color: rgba(0, 0, 0, 0.68);
-  border-color: rgba(0, 0, 0, 0.68);
-}
-
-.main {
-  display: flex;
-  max-width: 1100px;
-  padding-top: 20px;
-  margin: 0 auto;
-}
-
 .sidebar {
-  flex: 0 0 260px;
-  padding: 10px 30px 10px 15px;
-  box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #f9f9f9;
+  border-right: 1px solid #efefef;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+.sidebar .inner {
+  width: 260px;
+  padding: 20px 40px 10px;
 }
 
 .sidebar a {
@@ -137,12 +85,33 @@ a {
   border-bottom-width: 2px;
 }
 
+.mobile-close {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .project {
   padding: 1em 0;
 }
 
+.project_logo {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.project_logo img {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}
+
 .project_desc {
-  margin: 0 0 1em;
+  margin: 1em 0;
   line-height: 1.2;
   font-size: 1.1em;
   font-weight: 300;
@@ -171,8 +140,8 @@ a {
 }
 
 .content {
-  flex-grow: 1;
-  padding: 0 20px;
+  margin-left: 340px;
+  padding: 20px 80px 0;
   overflow: hidden;
 }
 
@@ -190,71 +159,64 @@ a {
   border-top: 4px solid rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 480px) {
-  .site-head {
-    text-align: center;
-  }
-  .site-head .brand {
-    float: none;
-    padding: 5px 0;
-  }
-  .site-head .menu {
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    padding: 4px 6px;
-    border-radius: 2px;
-    outline: none;
-  }
-  .site-head .menu:before {
-    content: '→';
-  }
-  .expand .site-head .menu:before {
-    content: '←';
-  }
-  .site-head .site-nav {
-    float: none;
-    max-height: 45px;
-    overflow: hidden;
-  }
-  .site-nav ul {
-    white-space: nowrap;
-    overflow-x: auto;
-    padding-bottom: 2em;
-    -webkit-overflow-scrolling: touch;
-  }
-  .site-nav li + li {
-    margin-left: 16px;
-  }
-  .site-nav a {
-    padding: 10px 0;
-  }
-  .main {
-    position: relative;
-    display: block;
-    overflow: hidden;
-  }
+.head {
+  display: none;
+}
+
+.guide-links {
+  margin-top: 1em;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+.guide-links a {
+  border: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 960px) {
   .sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: 9;
-    width: 85%;
-    max-width: 320px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transform: translate3d(-340px, 0, 0);
+    transform: translate3d(-341px, 0, 0);
     transition: transform 0.2s ease;
   }
   .expand .sidebar {
     transform: translate3d(0, 0, 0);
+    max-width: 100%;
   }
-  .project .logo>img {
-    width: 50%;
+  .expand .mobile-close {
+    display: block;
+  }
+  .content {
+    padding: 0 20px;
+    max-width: 840px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .head {
+    display: block;
+    position: relative;
+    padding: 1em 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+  }
+  .head_menu {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+  }
+  .mobile-close svg,
+  .head_menu svg {
+    width: 30px;
+    fill: #ccc;
+  }
+  .head_logo {
+    font-weight: 600;
+  }
+  .head_logo img {
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
   }
 }
 
