@@ -10,7 +10,7 @@ Sphinx Typlog Theme
    A sphinx theme sponsored by Typlog_. Designed by `Hsiaoming Yang`_.
 
 .. raw:: html
-   :file: ../sphinx_typlog_theme/sponsors.html
+   :file: _templates/authlib.html
 
 .. _Typlog: https://typlog.com/
 
