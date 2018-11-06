@@ -8,9 +8,9 @@ Installation
 
 Installing **sphinx typlog theme** is easy with pip::
 
-    $ pip install sphinx_typlog_theme
+    $ pip install sphinx-typlog-theme
 
-You can also add ``sphinx_typlog_theme`` into your **requirements.txt**.
+You can also add ``sphinx-typlog-theme`` into your **requirements.txt**.
 
 How to Use
 -------------
