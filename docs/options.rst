@@ -56,6 +56,15 @@ Configure your GitHub repo with ``github_user`` and ``github_repo``::
         'github_repo': 'mistune'
     }
 
+Remember to include the ``github.html`` template::
+
+    html_sidebars = {
+        '**': [
+            'github.html',
+            ...
+        ]
+    }
+
 analytics_id
 ------------
 
@@ -63,16 +72,4 @@ Track your site with Google Analytics::
 
     html_theme_options = {
         'analytics_id': 'UA-xxx'
-    }
-
-project.html
-------------
-
-There is a ``project.html`` template which you can use in sidebar::
-
-    html_sidebars = {
-        '**': [
-            'github.html',
-            ...
-        ]
     }
