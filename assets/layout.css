@@ -41,7 +41,7 @@ a {
 }
 .sidebar .inner {
   width: 260px;
-  padding: 20px 40px 10px;
+  padding: 20px 40px 40px;
 }
 
 .sidebar a {
@@ -240,8 +240,4 @@ body[data-page="search"] input[name="q"],
 
 body[data-page="search"] input[type="submit"] {
   line-height: 42px;
-}
-
-.rst-other-versions input[name="q"] {
-  border: 0;
 }

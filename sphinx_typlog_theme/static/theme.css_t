@@ -22,4 +22,9 @@ a:hover,
 .sponsor_text a {
   border-color: {{ theme_color }};
 }
+
+.injected .rst-versions .rst-current-version,
+.injected .rst-versions .rst-other-versions dd a:hover {
+  color: {{ theme_color }};
+}
 {% endif %}
