@@ -7,12 +7,14 @@ Sphinx Typlog Theme
 ===================
 
 .. note::
-   A sphinx theme designed by Typlog_.
+   A sphinx theme sponsored by Typlog_. Designed by `Hsiaoming Yang`_.
 
 .. raw:: html
    :file: ../sphinx_typlog_theme/sponsors.html
 
 .. _Typlog: https://typlog.com/
+
+.. _`Hsiaoming Yang`: https://lepture.com/
 
 .. toctree::
    :maxdepth: 2

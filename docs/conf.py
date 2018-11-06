@@ -59,8 +59,8 @@ html_theme_options = {
     'color': '#E8371A',
     'logo': 'typlog-512.png',
     'description': 'A sphinx theme designed by Typlog.',
-    'github_user': 'lepture',
-    'github_repo': 'authlib',
+    'github_user': 'typlog',
+    'github_repo': 'sphinx-typlog-theme',
     'meta_html': '<meta name="generator" content="sphinx">',
 }
 html_theme_path = [".."]

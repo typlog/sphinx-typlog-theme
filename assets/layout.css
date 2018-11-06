@@ -159,6 +159,11 @@ a {
   border-top: 4px solid rgba(0, 0, 0, 0.1);
 }
 
+.content > footer a {
+  color: #666;
+  text-decoration: underline;
+}
+
 .head {
   display: none;
 }
@@ -186,18 +191,21 @@ a {
     display: block;
   }
   .content {
-    padding: 0 20px;
+    padding: 64px 20px 0;
     max-width: 840px;
     margin: 0 auto;
     box-sizing: border-box;
   }
   .head {
     display: block;
-    position: relative;
+    position: fixed;
+    width: 100%;
     padding: 1em 20px;
     box-sizing: border-box;
     text-align: center;
     border-bottom: 1px solid #efefef;
+    background: white;
+    z-index: 9;
   }
   .head_menu {
     position: absolute;
