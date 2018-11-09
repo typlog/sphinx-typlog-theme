@@ -3,6 +3,8 @@ Markup Styles
 
 This page is showing markup styles, they have no meanings.
 
+.. contents:: Table of Contents
+
 Admonition
 ----------
 
@@ -136,12 +138,59 @@ List
   * A foo is a foo
   * A bar is a bar
 
+
+Options Lists
+~~~~~~~~~~~~~
+
+-a            command-line option "a"
+-b file       options can have arguments
+              and long descriptions
+--long        options can be long also
+--input=file  long options can also have
+              arguments
+/V            DOS/VMS-style options too
+
 Inline Style
 ------------
 
 A plain text mixed with **bold** and *italic*. And we have ``code`` too.
 
 Let's try a link https://lepture.com.
+
+Footnotes
+~~~~~~~~~
+
+Plain text	Typical result
+Footnote references, like [5]_.
+Note that footnotes may get
+rearranged, e.g., to the bottom of
+the "page".
+
+Autonumbered footnotes are
+possible, like using [#]_ and [#]_.
+
+They may be assigned 'autonumber
+labels' - for instance,
+[#fourth]_ and [#third]_.
+
+.. [5] A numerical footnote. Note
+   there's no colon after the ``]``.
+.. [#] This is the first one.
+.. [#] This is the second one.
+.. [#third] a.k.a. third_
+.. [#fourth] a.k.a. fourth_
+
+Citations
+~~~~~~~~~
+
+Citation references, like [CIT2002]_.
+Note that citations may get
+rearranged, e.g., to the bottom of
+the "page".
+
+.. [CIT2002] A citation
+   (as often used in journals).
+
 
 Badges
 ------

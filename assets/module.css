@@ -1,3 +1,6 @@
+a.toc-backref {
+  border: 0;
+}
 a.headerlink {
   margin-left: 1px;
   color: rgba(0, 0, 0, 0.24);
@@ -23,6 +26,39 @@ div.code-block-caption:hover > a.headerlink {
 
 a > .std-ref {
   font-weight: 700;
+}
+
+/* TOC */
+.contents {
+  display: inline-block;
+  padding: 16px 40px 16px 0;
+  background: #f9f9f9;
+  min-width: 240px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.contents .topic-title {
+  color: rgba(0,0,0,.4);
+  padding-left: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contents ul,
+.contents li > ul,
+.contents li > ul ul {
+  list-style-type: none;
+}
+.contents ul {
+  margin: 0;
+}
+.contents li {
+  margin-top: 4px;
+}
+
+.contents a {
+  border-bottom: 0;
+  color: rgba(0,0,0,.5);
 }
 
 .admonition {
@@ -207,6 +243,37 @@ a > .std-ref {
 .versionchanged > p,
 .deprecated > p {
   margin: 0;
+}
+
+/* FOOTNOTE */
+.yue table.footnote {
+  display: none;
+}
+a.footnote-reference {
+  display: inline-block;
+  padding: 0 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 14px;
+  border-bottom: 0;
+  background-color: rgba(0,0,0,.18);
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: top;
+  transition: all .1s ease;
+}
+.body a.footnote-reference:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,.8);
+}
+.yue table.citation {
+  margin-bottom: 10px;
+}
+
+table.docutils td.label {
+  width: 1px;
+  padding-right: 0.6em;
 }
 
 .button {
