@@ -1,5 +1,25 @@
+.project_description {
+  margin: 1em 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+a.logo {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-bottom: 1em;
+  border: 0;
+}
+.logo img {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}
+
 .github_wrap {
-  padding: 0 0 10px;
+  margin: 1em 0;
 }
 .github_wrap .github {
   display: inline-block;
