@@ -211,3 +211,8 @@ GitHub
 
 API References
 --------------
+
+.. module:: sphinx_typlog_theme
+
+.. autofunction:: get_path
+.. autofunction:: add_github_roles

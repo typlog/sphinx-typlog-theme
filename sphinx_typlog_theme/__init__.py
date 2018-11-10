@@ -3,7 +3,14 @@ __version__ = '0.6.1'
 
 
 def get_path():
-    """Shortcut for users whose theme is next to their conf.py."""
+    """Shortcut for users to access this theme. If you are using
+    Sphinx < 1.7, you can add it into html_theme_path::
+
+        import sphinx_typlog_theme
+        html_theme_path = [sphinx_typlog_theme.get_path()]
+
+    :return: theme path
+    """
     # Theme directory is defined as our parent directory
     return os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
@@ -37,6 +44,20 @@ def add_badge_roles(app):
 
 
 def add_github_roles(app, repo):
+    """Add ``gh`` role to your sphinx documents. It can generate GitHub
+    links easily::
+
+        :gh:`issue#57` will generate the issue link
+        :gh:`PR#85` will generate the pull request link
+
+    Use this function in ``conf.py`` to enable this feature::
+
+        def setup(app):
+            sphinx_typlog_theme.add_github_roles(app, 'lepture/authlib')
+
+    :param app: sphinx app
+    :param repo: GitHub repo, e.g. "lepture/authlib"
+    """
     from docutils.nodes import reference
     from docutils.parsers.rst.roles import set_classes
 

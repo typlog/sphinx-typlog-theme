@@ -1,12 +1,11 @@
-code.descname {
-  font-weight: 700;
+code.descclassname {
+  padding: 0;
   background-color: transparent;
 }
-
-.class dt > em,
-.method dt> em {
-  font-size: 0.98em;
-  color: rgba(0, 0, 0, 0.68);
+code.descname {
+  font-weight: 700;
+  padding: 0;
+  background-color: transparent;
 }
 
 dd {
@@ -16,7 +15,7 @@ dd {
 dd > table.field-list .field-name {
   display: block;
   font-size: 0.86em;
-  color: rgba(0, 0, 0, 0.24);
+  color: rgba(245, 88, 38, 0.8);
   padding: 0;
   text-align: left;
 }
@@ -28,4 +27,24 @@ dd > table.field-list .field-body {
 
 .yue dd > p {
   margin-bottom: 0.86em;
+}
+
+dl.class dt,
+dl.method dt,
+dl.data dt,
+dl.exception dt,
+dl.function dt {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 2px solid rgba(245, 88, 38, 0.4);
+  background: rgba(245, 88, 38, 0.05);
+}
+
+dl.class dt > em,
+dl.method dt > em,
+dl.data dt > em,
+dl.exception dt > em,
+dl.function dt > em {
+  font-size: 0.98em;
+  color: rgba(0, 0, 0, 0.68);
 }
