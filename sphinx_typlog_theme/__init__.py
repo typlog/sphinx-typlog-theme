@@ -43,7 +43,7 @@ def add_badge_roles(app):
     app.add_role('badge-yellow', create_badge_role('yellow'))
 
 
-def add_github_roles(app, repo=None):
+def add_github_roles(app, repo):
     """Add ``gh`` role to your sphinx documents. It can generate GitHub
     links easily::
 
@@ -60,13 +60,6 @@ def add_github_roles(app, repo=None):
     """
     from docutils.nodes import reference
     from docutils.parsers.rst.roles import set_classes
-
-    if repo is None:
-        theme_options = app.conf.html_theme_options
-        github_user = theme_options.get('github_user')
-        github_repo = theme_options.get('github_repo')
-        if github_user and github_repo:
-            repo = '{}/{}'.format(github_user, github_repo)
 
     base_url = 'https://github.com/{}'.format(repo)
 
@@ -89,24 +82,6 @@ def add_github_roles(app, repo=None):
         return [node], []
 
     app.add_role('gh', github_role)
-
-
-def load_readthedocs(app):
-    if not os.environ.get("READTHEDOCS"):
-        return
-
-    conf = app.config.html_context.get('readthedocs')
-    if not conf:
-        return
-
-    theme_options = app.config.html_theme_options
-    conf = conf.get('v1', {})
-    vcs = conf.get('vcs', {})
-
-    if vcs.get('type') == 'github':
-        if 'github_user' not in theme_options:
-            theme_options['github_user'] = vcs.get('user')
-            theme_options['github_repo'] = vcs.get('repo')
 
 
 def setup(app):
