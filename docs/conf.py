@@ -7,6 +7,7 @@ from sphinx_typlog_theme import __version__
 from sphinx_typlog_theme import (
     add_badge_roles,
     add_github_roles,
+    load_readthedocs,
 )
 
 extensions = ['sphinx.ext.autodoc']
@@ -59,8 +60,8 @@ html_theme_options = {
     'color': '#E8371A',
     'logo': 'typlog-512.png',
     'description': 'A sphinx theme designed by Typlog.',
-    'github_user': 'typlog',
-    'github_repo': 'sphinx-typlog-theme',
+    # 'github_user': 'typlog',
+    # 'github_repo': 'sphinx-typlog-theme',
     'meta_html': '<meta name="generator" content="sphinx">',
 }
 html_theme_path = [".."]
@@ -84,4 +85,5 @@ html_sidebars = {
 
 def setup(app):
     add_badge_roles(app)
+    load_readthedocs(app)
     add_github_roles(app, 'lepture/authlib')
