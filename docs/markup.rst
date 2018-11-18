@@ -84,6 +84,7 @@ Using ``code-block`` with other options.
 
 .. code-block:: js
     :caption: test.js
+    :emphasize-lines: 2
 
     function test() {
       console.log('hi');
