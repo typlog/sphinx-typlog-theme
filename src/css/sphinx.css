@@ -1,6 +1,7 @@
-a.toc-backref {
-  border: 0;
-}
+/* styles belong to sphinx */
+
+
+/* -- headerlink -- */
 a.headerlink {
   margin-left: 1px;
   color: rgba(0, 0, 0, 0.24);
@@ -11,8 +12,6 @@ a.headerlink {
 a.headerlink:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
-h1:hover > a.headerlink,
-h2:hover > a.headerlink,
 h3:hover > a.headerlink,
 h4:hover > a.headerlink,
 h5:hover > a.headerlink,
@@ -24,11 +23,10 @@ div.code-block-caption:hover > a.headerlink {
   visibility: visible;
 }
 
-a > .std-ref {
-  font-weight: 700;
+/* -- TOC begin -- */
+a.toc-backref {
+  border: 0;
 }
-
-/* TOC */
 .contents {
   display: inline-block;
   padding: 16px 40px 16px 0;
@@ -61,6 +59,61 @@ a > .std-ref {
   color: rgba(0,0,0,.5);
 }
 
+/* -- TOC end -- */
+
+
+/* -- API references begin -- */
+code.descclassname {
+  padding: 0;
+  background-color: transparent;
+}
+code.descname {
+  font-weight: 700;
+  padding: 0;
+  background-color: transparent;
+}
+
+dd {
+  margin: 4px 0 10px 2em;
+}
+
+dd > table.field-list .field-name {
+  display: block;
+  font-size: 0.86em;
+  color: rgba(245, 88, 38, 0.8);
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+dd > table.field-list .field-body {
+  display: block;
+  padding: 0 0 0 1em;
+}
+
+dl.class dt,
+dl.method dt,
+dl.data dt,
+dl.exception dt,
+dl.function dt {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 2px solid rgba(245, 88, 38, 0.4);
+  background: rgba(245, 88, 38, 0.05);
+}
+
+dl.class dt > em,
+dl.method dt > em,
+dl.data dt > em,
+dl.exception dt > em,
+dl.function dt > em {
+  font-size: 0.98em;
+  color: rgba(0, 0, 0, 0.68);
+}
+/* -- API references end -- */
+
+
+/* -- admonition begin -- */
 .admonition {
   position: relative;
   padding: 40px 24px 18px 24px;
@@ -186,7 +239,10 @@ a > .std-ref {
   font-weight: 700;
   color: #f759ab;
 }
+/* -- admonition begin -- */
 
+
+/* -- versioning begin -- */
 .versionmodified {
   color: rgba(0, 0, 0, 0.86);
   font-weight: 700;
@@ -244,89 +300,29 @@ a > .std-ref {
 .deprecated > p {
   margin: 0;
 }
+/* -- versioning end -- */
 
-/* FOOTNOTE */
-.yue table.footnote {
-  display: none;
-}
-a.footnote-reference {
-  display: inline-block;
-  padding: 0 4px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 8px;
-  line-height: 14px;
-  border-bottom: 0;
-  background-color: rgba(0,0,0,.18);
-  color: #fff;
-  border-radius: 3px;
-  vertical-align: top;
-  transition: all .1s ease;
-}
-.body a.footnote-reference:hover {
-  color: #fff;
-  background-color: rgba(0,0,0,.8);
-}
-.yue table.citation {
-  margin-bottom: 10px;
-}
 
-table.docutils td.label {
-  width: 1px;
-  padding-right: 0.6em;
-}
-
-.button {
-  display: inline-block;
-  padding: 1.2em 2em;
-  font-weight: 700;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.98);
-  border: 0;
-  transition: background-color 100ms;
-}
-
-.input-group {
-  display: flex;
-  border: 2px solid rgba(0, 0, 0, 0.86);
-}
-
-.input-group > input[type="text"] {
-  flex-grow: 1;
-  outline: none;
-  border: 0;
-  padding: 0.6em 10px;
-}
-
-body[data-page="search"] input[type="submit"],
-.input-group > button {
-  display: inline-block;
-  padding: 0 0.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.86);
-  border: 0;
-  transition: background-color 100ms;
-  cursor: pointer;
-  border-radius: 0;
-  outline: none;
-}
-
+/* -- highlight begin -- */
 .highlighted {
   padding: 1px 4px;
   opacity: 0.6;
   color: white;
-  background-color: rgba(0, 0, 0, 0.68);
 }
 
 .highlight,
+.highlighted,
+.highlighttable,
 .literal-block-wrapper {
+  background-color: var(--code-background);
   margin: 1.4em 0;
+}
+
+.highlighted .highlight,
+.highlighttable .highlight,
+.literal-block-wrapper .highlight {
+  background-color: transparent;
+  margin: 0;
 }
 
 .highlight pre,
@@ -335,20 +331,26 @@ body[data-page="search"] input[type="submit"],
   margin: 0;
 }
 
-.code-block-caption {
+.literal-block-wrapper {
+  position: relative;
+}
+.literal-block-wrapper .code-block-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 10px;
+  border-radius: 0 4px;
   color: rgba(0, 0, 0, 0.3);
+  background-color: var(--code-alt-background);
 }
 
-.highlighttable {
-  background: rgba(0,0,0,.02);
-}
 .highlighttable .linenos {
   width: 1px;
 }
 .highlighttable .linenodiv {
   padding: 10px 6px;
-  background: rgba(0, 0, 0, 0.03);
   text-align: right;
+  background-color: var(--code-alt-background);
 }
 .highlighttable .linenodiv pre {
   color: rgba(0, 0, 0, 0.3);
@@ -356,19 +358,14 @@ body[data-page="search"] input[type="submit"],
 .highlighttable .highlight {
   padding-left: 10px;
 }
+/* -- highlight end -- */
 
+
+/* -- extra -- */
 .hlist td {
   vertical-align: top;
 }
 
 p.centered {
   text-align: center;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
 }

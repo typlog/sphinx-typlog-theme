@@ -1,0 +1,93 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 16px/1.42 var(--text-font);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1, h2, h3, strong {
+  color: var(--heading-color);
+}
+
+a {
+  color: rgba(0, 0, 0, 0.86);
+  text-decoration: none;
+}
+
+.clearfix:after,
+.section:after,
+.inner:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+a > .std-ref {
+  font-weight: 700;
+}
+
+.yue dd > p {
+  margin-bottom: 0.86em;
+}
+
+.yue table.citation {
+  margin-bottom: 10px;
+}
+
+table.docutils td.label {
+  width: 1px;
+  padding-right: 0.6em;
+}
+
+.globaltoc {
+  margin: 20px 0;
+}
+.globaltoc > p.caption {
+  display: none;
+}
+
+body[data-page="search"] input[name="q"],
+.rst-other-versions input[name="q"] {
+  border: 2px solid rgba(0, 0, 0, 0.86);
+  padding: 0 10px;
+  line-height: 38px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body[data-page="search"] input[type="submit"] {
+  line-height: 42px;
+}
+
+#searchbox .input-group {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.86);
+}
+
+#searchbox .input-group > input[type="text"] {
+  flex-grow: 1;
+  outline: none;
+  border: 0;
+  padding: 0.6em 10px;
+}
+
+body[data-page="search"] input[type="submit"],
+#searchbox .input-group > button {
+  display: inline-block;
+  padding: 0 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.86);
+  border: 0;
+  transition: background-color 100ms;
+  cursor: pointer;
+  border-radius: 0;
+  outline: none;
+}

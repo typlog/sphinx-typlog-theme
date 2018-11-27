@@ -43,7 +43,7 @@
 
 {% block body %}
   {{ body }}
-  <div class="guide-links">
+  <div class="t-pagination clearfix">
     {%- if prev %}
     <span>
       ← <a href="{{ prev.link|e }}" title="{{ prev.title }}">{{ prev.title|truncate(30) }}</a>

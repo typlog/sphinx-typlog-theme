@@ -1,0 +1,62 @@
+.yue table.footnote {
+  display: none;
+}
+a.footnote-reference {
+  display: inline-block;
+  padding: 0 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 14px;
+  border-bottom: 0;
+  background-color: rgba(0,0,0,.18);
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: top;
+  transition: all .1s ease;
+}
+.t-body a.footnote-reference:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,.8);
+}
+
+#typlog-footnote-mask {
+  display: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#typlog-footnote-mask.Active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+#typlog-footnote-content,
+#typlog-footnote-content a[href^="#fnref"] {
+  display: none;
+}
+
+#typlog-footnote-content.Active {
+  display: block;
+  font-size: 0.86em;
+  color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  max-width: 560px;
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.16);
+}
+
+@media (min-width: 560px) {
+  #typlog-footnote-content.Active {
+    border-radius: 3px;
+  }
+}

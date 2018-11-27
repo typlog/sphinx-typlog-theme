@@ -6,8 +6,8 @@
 .yue h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
-  color: rgba(0, 0, 0, 0.98);
+  font-family: var(--heading-font);
+  color: var(--heading-color);
 }
 
 .yue h1 {
@@ -127,18 +127,10 @@
 
 .yue blockquote {
   position: relative;
-  padding: 10px 10px 10px 38px;
-  margin: 1em 0;
+  padding: 0 1em 0 2em;
+  margin: 1.2em 0;
   color: rgba(0, 0, 0, 0.68);
-}
-
-.yue blockquote:before {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  content: '“';
-  font: bold 48px/1 "Georgia", serif;
-  color: rgba(0, 0, 0, 0.1);
+  border-left: 6px solid rgba(0, 0, 0, 0.1);
 }
 
 .yue blockquote a {
@@ -188,21 +180,19 @@
   font-size: 0.96em;
   padding: 1px 4px;
   border-radius: 2px;
-  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-family: var(--code-font);
   word-wrap: break-word;
 }
 
 .yue pre {
   margin: 1.4em 0;
-  padding: 16px 16px 16px 18px;
+  padding: 1.2em;
   border: none;
-  border-left: 3px solid rgba(0, 0, 0, 0.08);
   overflow: auto;
   line-height: 1.5;
   font-size: 0.98em;
-  font-family: Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
-  color: rgba(0, 0, 0, 0.68);
-  background-color: rgba(0, 0, 0, 0.02);
+  font-family: var(--code-font);
+  color: var(--text-color);
 }
 
 .yue pre code,

@@ -1,0 +1,37 @@
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  min-width: 3em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #999;
+  color: white;
+  line-height: 1;
+  border-radius: 2px;
+  font-size: 13px;
+  opacity: 0.98;
+  margin-right: 4px;
+  font-family: var(--code-font);
+  user-select: none;
+}
+.badge-one {
+  font-size: 12px;
+  min-width: 0;
+  padding: 4px 6px;
+}
+.badge-todo,
+.badge-yellow {
+  background-color: #F7BA2A;
+}
+.badge-done,
+.badge-green {
+  background-color: #49C784;
+}
+.badge-plan,
+.badge-doing,
+.badge-blue {
+  background-color: #03A9F4;
+}
+.badge-red {
+  background-color: #FF612F;
+}

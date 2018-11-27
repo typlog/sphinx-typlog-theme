@@ -1,0 +1,11 @@
+:root {
+  --text-font: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  --text-color: rgba(0, 0, 0, 0.68);
+
+  --heading-font: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+  --heading-color: rgba(0, 0, 0, 0.98);
+
+  --code-font: "Roboto Mono", Menlo, monospace;
+  --code-background: rgba(0, 0, 0, .02);
+  --code-alt-background: rgba(0, 0, 0, .03);
+}
