@@ -539,6 +539,11 @@ a {
     clear: both
 }
 
+.line-block {
+    display: block;
+    margin-bottom: 1em;
+}
+
 .sidebar {
     position: fixed;
     z-index: 10;
