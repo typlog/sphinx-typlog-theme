@@ -533,8 +533,7 @@ a {
 }
 
 .guide-links:after,
-.inner:after,
-.section:after {
+.inner:after {
     display: table;
     content: '';
     clear: both
