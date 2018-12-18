@@ -49,7 +49,47 @@ $(function() {
 
     content.innerHTML = html;
     content.setAttribute('style', style);
-    content.className = 'Active';
-    mask.className = 'Active';
+    content.className = '_active';
+    mask.className = '_active';
   }
+
+  // github badge
+  function fetchGitHubRepo (repo) {
+    var url = 'https://api.github.com/repos/' + repo;
+    $.getJSON(url, function (data) {
+      var counts = [+new Date(), data.stargazers_count, data.forks_count];
+      localStorage.setItem('gh:' + repo, JSON.stringify(counts));
+      updateGitHubStats(counts[1], counts[2]);
+    });
+  }
+
+  function updateGitHubStats (stars, forks) {
+    $('.github_stars strong').text(stars);
+    $('.github_forks strong').text(forks);
+  }
+
+  function initGitHub (url) {
+    if (!url) {
+      return
+    }
+    var repo = url.replace('https://github.com/', '');
+    var cache = localStorage.getItem('gh:' + repo);
+    if (cache) {
+      try {
+        var counts = JSON.parse(cache);
+        updateGitHubStats(counts[1], counts[2]);
+        var delta = new Date() - counts[0];
+        if (delta < 0 || delta > 900000) {
+          fetchGitHubRepo(repo);
+        }
+      } catch (error) {
+        fetchGitHubRepo(repo);
+      }
+    } else {
+      fetchGitHubRepo(repo);
+    }
+  }
+
+  initGitHub($('.github').attr('href'));
+
 });

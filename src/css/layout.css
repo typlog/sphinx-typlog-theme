@@ -153,4 +153,10 @@
     width: 30px;
     height: 30px;
   }
+  .t-content :target::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -80px 0 0;
+  }
 }
