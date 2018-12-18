@@ -1,4 +1,6 @@
 :root {
+  --primary-color: #E8371A;
+
   --text-font: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
   --text-color: rgba(0, 0, 0, 0.68);
 
@@ -8,4 +10,8 @@
   --code-font: "Roboto Mono", Menlo, monospace;
   --code-background: rgba(0, 0, 0, .02);
   --code-alt-background: rgba(0, 0, 0, .03);
+
+  --autodoc-text-color: #f55826;
+  --autodoc-border-color: rgba(245,88,38,.4);
+  --autodoc-background: rgba(245,88,38,.05);
 }

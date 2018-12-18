@@ -80,7 +80,7 @@ dd {
 dd > table.field-list .field-name {
   display: block;
   font-size: 0.86em;
-  color: rgba(245, 88, 38, 0.8);
+  color: var(--autodoc-text-color);
   padding: 0;
   text-align: left;
   text-transform: uppercase;
@@ -98,8 +98,16 @@ dl.exception dt,
 dl.function dt {
   padding: 5px;
   color: rgba(0, 0, 0, 0.4);
-  border-top: 2px solid rgba(245, 88, 38, 0.4);
-  background: rgba(245, 88, 38, 0.05);
+  border-top: 2px solid var(--autodoc-border-color);
+  background: var(--autodoc-background);
+}
+
+dl.class dt code,
+dl.method dt code,
+dl.data dt code,
+dl.exception dt code,
+dl.function dt code {
+  color: var(--autodoc-text-color);
 }
 
 dl.class dt > em,

@@ -33,7 +33,7 @@ $(function() {
     if (!content) {
       content = document.createElement('div');
       content.id = CONTENT_ID;
-      $('.body').append(content);
+      $('.t-body').append(content);
     }
     var MASK_ID = 'typlog-footnote-mask';
     var mask = document.getElementById(MASK_ID);

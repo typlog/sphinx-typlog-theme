@@ -4,11 +4,14 @@
   "private": true,
   "description": "A sphinx theme",
   "scripts": {
-    "build": "cleancss src/index.css -o sphinx_typlog_theme/static/typlog.css"
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "cleancss src/index.css -o sphinx_typlog_theme/static/typlog.css",
+    "build:js": "uglifyjs src/app.js -o sphinx_typlog_theme/js/app.js"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "clean-css-cli": "^4.1.10"
+    "clean-css-cli": "^4.1.10",
+    "uglify-js": "^3.4.9"
   }
 }
