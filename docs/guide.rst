@@ -1,4 +1,4 @@
-How to Use
+How To Use
 ==========
 
 Guide on how to use **sphinx typlog theme**.
@@ -13,7 +13,7 @@ Installing **sphinx typlog theme** is easy with pip::
 You can also add ``sphinx-typlog-theme`` into your **requirements.txt**.
 
 How to Use
--------------
+----------
 
 To use **sphinx typlog theme** in your documentation, configure it in
 ``conf.py``::
@@ -25,7 +25,7 @@ If you are using Sphinx < 1.7, you can add it into ``html_theme_path``::
     import sphinx_typlog_theme
     html_theme_path = [sphinx_typlog_theme.get_path()]
 
-Other Optioins
---------------
+Other Options
+-------------
 
 In ``conf.py``, there are lots of :ref:`options` to be configured.
