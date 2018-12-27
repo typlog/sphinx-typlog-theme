@@ -22,6 +22,12 @@ setup(
             'sphinx_typlog_theme = sphinx_typlog_theme',
         ]
     },
+    extras_require={
+        'dev': [
+            'sphinx',
+            'livereload',
+        ],
+    },
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

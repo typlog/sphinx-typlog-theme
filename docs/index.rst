@@ -24,4 +24,5 @@ Sphinx Typlog Theme
    guide
    options
    markup
+   contributing
    changelog

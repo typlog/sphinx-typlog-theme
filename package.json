@@ -4,6 +4,7 @@
   "private": true,
   "description": "A sphinx theme",
   "scripts": {
+    "dev": "npm run build && make docs && python server.py",
     "build": "npm run build:css && npm run build:js",
     "build:css": "cleancss src/index.css -o sphinx_typlog_theme/static/typlog.css",
     "build:js": "uglifyjs src/app.js -o sphinx_typlog_theme/js/app.js"
