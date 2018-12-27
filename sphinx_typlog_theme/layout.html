@@ -94,7 +94,9 @@
   </aside>
   <div class="t-content">
     <div class="t-body yue">{% block body %}{% endblock %}</div>
-    {%- include "footer.html" %}
+    {%- block footer %}
+      {%- include "footer.html" %}
+    {%- endblock %}
   </div>
   <script>{% include "js/app.js" %}</script>
 </body>
