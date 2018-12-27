@@ -23,10 +23,7 @@ setup(
         ]
     },
     extras_require={
-        'dev': [
-            'sphinx',
-            'livereload',
-        ],
+        'dev': ['sphinx', 'livereload'],
     },
     classifiers=[
         'Development Status :: 4 - Beta',
