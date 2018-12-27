@@ -217,3 +217,4 @@ API References
 
 .. autofunction:: get_path
 .. autofunction:: add_github_roles
+.. autofunction:: add_badge_roles

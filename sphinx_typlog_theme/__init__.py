@@ -16,6 +16,9 @@ def get_path():
 
 
 def add_badge_roles(app):
+    """Add ``badge`` role to your sphinx documents. It can create
+    a colorful badge inline.
+    """
     from docutils.nodes import inline, make_id
     from docutils.parsers.rst.roles import set_classes
 
