@@ -6,11 +6,12 @@ Here is the changelog for sphinx typlog theme.
 Version 0.7
 -----------
 
-**Release date not decided**
+**Release on Dec 28, 2018**
 
 - Style for global TOC.
 - Style for API references.
 - Use ``logo.html`` in sidebar.
+- Improvements on CSS.
 
 Version 0.6.1
 -------------
