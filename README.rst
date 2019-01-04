@@ -26,3 +26,4 @@ Here are some examples which are using this theme:
 
 - https://sphinx-typlog-theme.readthedocs.io/
 - https://docs.authlib.org/
+- https://webargs.readthedocs.io/
