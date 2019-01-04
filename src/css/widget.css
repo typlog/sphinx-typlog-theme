@@ -79,25 +79,25 @@ a.logo {
   width: 48px;
   vertical-align: middle;
 }
-.sponsor a.sponsor_image {
+.sponsor > a.image {
   float: left;
   border-bottom: none;
 }
-.sponsor_text {
+.sponsor > .text {
   overflow: hidden;
   padding-left: 10px;
   vertical-align: middle;
   max-width: calc(100% - 60px);
 }
 .t-content .sponsor,
-.t-content .sponsor_text {
+.t-content .sponsor > .text {
   display: inline-block;
 }
 .t-content .sponsor img {
   width: auto;
   height: 40px;
 }
-.t-content a.sponsor_image {
+.t-content .sponsor > a.image {
   display: inline-block;
   float: none;
 }
