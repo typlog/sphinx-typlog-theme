@@ -3,10 +3,18 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.7.1
+-------------
+
+**Released on Jan 4, 2019**
+
+- Fix RTD widget on mobile.
+- Fix sponsor image blocked by uBlock.
+
 Version 0.7
 -----------
 
-**Release on Dec 28, 2018**
+**Released on Dec 28, 2018**
 
 - Style for global TOC.
 - Style for API references.
