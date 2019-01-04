@@ -3,6 +3,8 @@
 @import "css/yue.css";
 @import "css/reset.css";
 @import "css/sphinx.css";
+@import "css/directives.css";
+@import "css/highlight.css";
 @import "css/rtd.css";
 @import "css/layout.css";
 @import "css/widget.css";

@@ -80,7 +80,7 @@ dd {
 dd > table.field-list .field-name {
   display: block;
   font-size: 0.86em;
-  color: var(--autodoc-text-color);
+  color: var(--color-code);
   padding: 0;
   text-align: left;
   text-transform: uppercase;
@@ -98,8 +98,8 @@ dl.exception dt,
 dl.function dt {
   padding: 5px;
   color: rgba(0, 0, 0, 0.4);
-  border-top: 2px solid var(--autodoc-border-color);
-  background: var(--autodoc-background);
+  border-top: 2px solid var(--color-autodoc-border);
+  background: var(--color-autodoc-background);
 }
 
 dl.class dt code,
@@ -107,7 +107,7 @@ dl.method dt code,
 dl.data dt code,
 dl.exception dt code,
 dl.function dt code {
-  color: var(--autodoc-text-color);
+  color: var(--color-code);
 }
 
 dl.class dt > em,
@@ -119,255 +119,6 @@ dl.function dt > em {
   color: rgba(0, 0, 0, 0.68);
 }
 /* -- API references end -- */
-
-
-/* -- admonition begin -- */
-.admonition {
-  position: relative;
-  padding: 40px 24px 18px 24px;
-  margin: 2em 0;
-  border-left: 4px solid #ddd;
-  background-color: #f8f8f8;
-}
-
-.admonition:before {
-  position: absolute;
-  content: '#';
-  top: 14px;
-  left: -12px;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background-color: #ddd;
-  text-align: center;
-  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
-}
-.admonition.tip:before {
-  content: 'T';
-  font-size: 12px;
-}
-
-.admonition > .admonition-title {
-  position: absolute;
-  margin: 0;
-  top: 12px;
-  left: 24px;
-  font-size: 0.8em;
-  color: rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
-}
-
-.admonition > .last {
-  margin-bottom: 0;
-}
-
-.admonition.note,
-.admonition.attention {
-  border-color: #03A9F4;
-  background-color: rgba(3, 172, 244, 0.08);
-}
-.admonition.note:before,
-.admonition.attention:before {
-  background-color: #03A9F4;
-}
-.admonition.attention:before {
-  content: '!';
-}
-.admonition.note > .admonition-title,
-.admonition.attention > .admonition-title {
-  font-weight: 700;
-  color: #03A9F4;
-}
-
-.admonition.warning,
-.admonition.caution {
-  border-color: #F7BA2A;
-  background-color: rgba(247, 186, 42, 0.1);
-}
-.admonition.warning:before,
-.admonition.caution:before {
-  content: '!';
-  background-color: #F7BA2A;
-}
-.admonition.warning > .admonition-title,
-.admonition.caution > .admonition-title {
-  font-weight: 700;
-  color: #F1B52A;
-}
-
-.admonition.error,
-.admonition.danger {
-  border-color: #FF612F;
-  background-color: rgba(255, 92, 47, 0.08);
-}
-.admonition.error:before,
-.admonition.danger:before {
-  content: '!';
-  background-color: #FF612F;
-}
-.admonition.error > .admonition-title,
-.admonition.danger > .admonition-title {
-  font-weight: 700;
-  color: #FF612F;
-}
-
-.admonition.important{
-  border-color: #b37feb;
-  background-color: rgba(179, 127, 235, 0.1);
-}
-.admonition.important:before {
-  background-color: #b37feb;
-}
-.admonition.important > .admonition-title {
-  font-weight: 700;
-  color: #b37feb;
-}
-
-.admonition.hint {
-  border-color: #36cfc9;
-  background-color: rgba(8, 151, 156, 0.1);
-}
-.admonition.hint:before {
-  background-color: #36cfc9;
-}
-.admonition.hint > .admonition-title {
-  font-weight: 700;
-  color: #36cfc9;
-}
-
-.admonition.tip {
-  border-color: #f759ab;
-  background-color: rgba(247, 89, 171, 0.1);
-}
-.admonition.tip:before {
-  background-color: #f759ab;
-}
-.admonition.tip > .admonition-title {
-  font-weight: 700;
-  color: #f759ab;
-}
-/* -- admonition begin -- */
-
-
-/* -- versioning begin -- */
-.versionmodified {
-  color: rgba(0, 0, 0, 0.86);
-  font-weight: 700;
-}
-
-.versionadded,
-.versionchanged,
-.deprecated {
-  position: relative;
-  padding: 8px 24px;
-  margin: 1em 0;
-  border-left: 4px solid transparent;
-}
-
-.versionadded:before,
-.versionchanged:before,
-.deprecated:before {
-  position: absolute;
-  content: '!';
-  top: 8px;
-  left: -12px;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  text-align: center;
-  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
-}
-
-.versionadded {
-  border-color: #49C784;
-  background-color: rgba(73, 199, 132, 0.08);
-}
-.versionadded:before {
-  content: '#';
-  background-color: #49C784;
-}
-.versionchanged {
-  border-color: #F7BA2A;
-  background-color: rgba(247, 186, 42, 0.08);
-}
-.versionchanged:before {
-  background-color: #F7BA2A;
-}
-.deprecated {
-  border-color: #FF612F;
-  background-color: rgba(255, 92, 47, 0.08);
-}
-.deprecated:before {
-  background-color: #FF612F;
-}
-
-.versionadded > p,
-.versionchanged > p,
-.deprecated > p {
-  margin: 0;
-}
-/* -- versioning end -- */
-
-
-/* -- highlight begin -- */
-.highlighted {
-  padding: 1px 4px;
-  opacity: 0.6;
-  color: white;
-}
-
-.highlight,
-.highlighted,
-.highlighttable,
-.literal-block-wrapper {
-  background-color: var(--code-background);
-  margin: 1.4em 0;
-}
-
-.highlighted .highlight,
-.highlighttable .highlight,
-.literal-block-wrapper .highlight {
-  background-color: transparent;
-  margin: 0;
-}
-
-.highlight pre,
-.literal-block-wrapper .highlight,
-.highlighttable .highlight {
-  margin: 0;
-}
-
-.literal-block-wrapper {
-  position: relative;
-}
-.literal-block-wrapper .code-block-caption {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 2px 10px;
-  border-radius: 0 4px;
-  color: rgba(0, 0, 0, 0.3);
-  background-color: var(--code-alt-background);
-}
-
-.highlighttable .linenos {
-  width: 1px;
-}
-.highlighttable .linenodiv {
-  padding: 10px 6px;
-  text-align: right;
-  background-color: var(--code-alt-background);
-}
-.highlighttable .linenodiv pre {
-  color: rgba(0, 0, 0, 0.3);
-}
-.highlighttable .highlight {
-  padding-left: 10px;
-}
-/* -- highlight end -- */
-
 
 /* -- extra -- */
 .hlist td {

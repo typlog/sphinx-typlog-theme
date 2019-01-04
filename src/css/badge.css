@@ -11,7 +11,7 @@
   font-size: 13px;
   opacity: 0.98;
   margin-right: 4px;
-  font-family: var(--code-font);
+  font-family: var(--font-code);
   user-select: none;
 }
 .badge-one {

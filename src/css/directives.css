@@ -1,0 +1,185 @@
+/* -- admonition begin -- */
+.admonition {
+  position: relative;
+  padding: 40px 24px 18px 24px;
+  margin: 2em 0;
+  border-left: 4px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.admonition:before {
+  position: absolute;
+  content: '#';
+  top: 14px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ddd;
+  text-align: center;
+  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
+}
+.admonition.tip:before {
+  content: 'T';
+  font-size: 12px;
+}
+
+.admonition > .admonition-title {
+  position: absolute;
+  margin: 0;
+  top: 12px;
+  left: 24px;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+.admonition > .last {
+  margin-bottom: 0;
+}
+
+.admonition.note,
+.admonition.attention {
+  border-color: var(--color-blue);
+  background-color: var(--color-blue-alpha);
+}
+.admonition.note:before,
+.admonition.attention:before {
+  background-color: var(--color-blue);
+}
+.admonition.attention:before {
+  content: '!';
+}
+.admonition.note > .admonition-title,
+.admonition.attention > .admonition-title {
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.admonition.warning,
+.admonition.caution {
+  border-color: var(--color-yellow);
+  background-color: rgba(247, 186, 42, 0.1);
+}
+.admonition.warning:before,
+.admonition.caution:before {
+  content: '!';
+  background-color: var(--color-yellow);
+}
+.admonition.warning > .admonition-title,
+.admonition.caution > .admonition-title {
+  font-weight: 700;
+  color: var(--color-yellow);
+}
+
+.admonition.error,
+.admonition.danger {
+  border-color: var(--color-red);
+  background-color: rgba(255, 92, 47, 0.08);
+}
+.admonition.error:before,
+.admonition.danger:before {
+  content: '!';
+  background-color: var(--color-red);
+}
+.admonition.error > .admonition-title,
+.admonition.danger > .admonition-title {
+  font-weight: 700;
+  color: var(--color-red);
+}
+
+.admonition.important{
+  border-color: var(--color-purple);
+  background-color: rgba(179, 127, 235, 0.1);
+}
+.admonition.important:before {
+  background-color: var(--color-purple);
+}
+.admonition.important > .admonition-title {
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.admonition.hint {
+  border-color: var(--color-cyan);
+  background-color: rgba(8, 151, 156, 0.1);
+}
+.admonition.hint:before {
+  background-color: var(--color-cyan);
+}
+.admonition.hint > .admonition-title {
+  font-weight: 700;
+  color: var(--color-cyan);
+}
+
+.admonition.tip {
+  border-color: var(--color-magenta);
+  background-color: rgba(247, 89, 171, 0.1);
+}
+.admonition.tip:before {
+  background-color: var(--color-magenta);
+}
+.admonition.tip > .admonition-title {
+  font-weight: 700;
+  color: var(--color-magenta);
+}
+
+/* -- versioning begin -- */
+.versionmodified {
+  color: rgba(0, 0, 0, 0.86);
+  font-weight: 700;
+}
+
+.versionadded,
+.versionchanged,
+.deprecated {
+  position: relative;
+  padding: 8px 24px;
+  margin: 1em 0;
+  border-left: 4px solid transparent;
+}
+
+.versionadded:before,
+.versionchanged:before,
+.deprecated:before {
+  position: absolute;
+  content: '!';
+  top: 8px;
+  left: -12px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  font: normal bold 14px/20px "Helvetica Neue", Arial, sans-serif;
+}
+
+.versionadded {
+  border-color: var(--color-green);
+  background-color: rgba(73, 199, 132, 0.08);
+}
+.versionadded:before {
+  content: '#';
+  background-color: var(--color-green);
+}
+.versionchanged {
+  border-color: var(--color-yellow);
+  background-color: rgba(247, 186, 42, 0.08);
+}
+.versionchanged:before {
+  background-color: var(--color-yellow);
+}
+.deprecated {
+  border-color: var(--color-red);
+  background-color: rgba(255, 92, 47, 0.08);
+}
+.deprecated:before {
+  background-color: var(--color-red);
+}
+
+.versionadded > p,
+.versionchanged > p,
+.deprecated > p {
+  margin: 0;
+}

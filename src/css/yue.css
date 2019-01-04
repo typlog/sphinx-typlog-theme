@@ -9,8 +9,8 @@
 .yue h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: var(--heading-font);
-  color: var(--heading-color);
+  font-family: var(--font-text);
+  color: var(--color-heading);
 }
 
 .yue h1 {
@@ -48,15 +48,16 @@
 }
 
 .yue a {
-  color: rgba(0, 0, 0, 0.98);
+  color: var(--color-heading);
   word-wrap: break-word;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.26);
 }
 
 .yue a:hover {
-  color: rgba(0, 0, 0, 0.6);
-  border-color: rgba(0, 0, 0, 0.6);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  text-decoration: none;
 }
 
 .yue h1 a, .yue h2 a, .yue h3 a {
@@ -179,11 +180,11 @@
 .yue code,
 .yue tt {
   background-color: rgba(220, 220, 220, 0.2);
-  color: #F55826;
+  color: var(--color-code);
   font-size: 0.96em;
   padding: 1px 4px;
   border-radius: 2px;
-  font-family: var(--code-font);
+  font-family: var(--font-code);
   word-wrap: break-word;
   hyphens: none;
 }
@@ -195,8 +196,8 @@
   overflow: auto;
   line-height: 1.5;
   font-size: 0.98em;
-  font-family: var(--code-font);
-  color: var(--text-color);
+  font-family: var(--font-code);
+  color: var(--color-text);
 }
 
 .yue pre code,

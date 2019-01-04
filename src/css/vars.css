@@ -1,17 +1,26 @@
 :root {
-  --primary-color: #E8371A;
+  --color-blue: #03A9F4;
+  --color-blue-alpha: rgba(3, 172, 244, 0.08);
+  --color-green: #49C784;
+  --color-yellow: #F7BA2A;
+  --color-purple: #b37feb;
+  --color-cyan: #36cfc9;
+  --color-magenta: #f759ab;
+  --color-red: #FF612F;
 
-  --text-font: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
-  --text-color: rgba(0, 0, 0, 0.68);
+  --color-primary: #E8371A;
+  --color-text: rgba(0, 0, 0, 0.68);
+  --color-heading: rgba(0, 0, 0, 0.98);
+  --color-code: #F55826;
 
-  --heading-font: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
-  --heading-color: rgba(0, 0, 0, 0.98);
+  --color-autodoc-background: rgba(245,88,38,.05);
+  --color-autodoc-border: rgba(245,88,38,.4);
 
-  --code-font: "Roboto Mono", Menlo, monospace;
+  --font-english: "Roboto", "Helvetica Neue", "Helvetica";
+  --font-cjk: "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+  --font-text: var(--font-english), var(--font-cjk), sans-serif;
+  --font-code: "Roboto Mono", Menlo, monospace;
+
   --code-background: rgba(0, 0, 0, .02);
   --code-alt-background: rgba(0, 0, 0, .03);
-
-  --autodoc-text-color: #f55826;
-  --autodoc-border-color: rgba(245,88,38,.4);
-  --autodoc-background: rgba(245,88,38,.05);
 }

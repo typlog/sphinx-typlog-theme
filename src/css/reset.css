@@ -1,8 +1,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 400 16px/1.42 var(--text-font);
-  color: var(--text-color);
+  font: 400 16px/1.42 var(--font-text);
+  color: var(--color-text);
 }
 
 img {
@@ -11,12 +11,16 @@ img {
 }
 
 h1, h2, h3, strong {
-  color: var(--heading-color);
+  color: var(--color-heading);
 }
 
 a {
-  color: rgba(0, 0, 0, 0.86);
+  color: var(--color-primary);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .clearfix:after,

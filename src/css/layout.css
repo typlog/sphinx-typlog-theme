@@ -146,6 +146,10 @@
   }
   .t-head_logo {
     font-weight: 600;
+    color: var(--color-heading);
+  }
+  .t-head_logo:hover {
+    text-decoration: none;
   }
   .t-head_logo img {
     vertical-align: middle;

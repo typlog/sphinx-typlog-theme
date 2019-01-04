@@ -89,6 +89,13 @@ a.logo {
   vertical-align: middle;
   max-width: calc(100% - 60px);
 }
+.sponsor > .text > a {
+  color: var(--color-heading);
+  border-bottom: 1px solid rgba(0,0,0,.26);
+}
+.sponsor > .text > a:hover {
+  color: var(--color-primary);
+}
 .t-content .sponsor,
 .t-content .sponsor > .text {
   display: inline-block;

@@ -1,0 +1,56 @@
+/* -- highlight begin -- */
+.highlighted {
+  padding: 1px 4px;
+  opacity: 0.6;
+  color: white;
+}
+
+.highlight,
+.highlighted,
+.highlighttable,
+.literal-block-wrapper {
+  background-color: var(--code-background);
+  margin: 1.4em 0;
+}
+
+.highlighted .highlight,
+.highlighttable .highlight,
+.literal-block-wrapper .highlight {
+  background-color: transparent;
+  margin: 0;
+}
+
+.highlight pre,
+.literal-block-wrapper .highlight,
+.highlighttable .highlight {
+  margin: 0;
+}
+
+.literal-block-wrapper {
+  position: relative;
+}
+.literal-block-wrapper .code-block-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 10px;
+  border-radius: 0 4px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: var(--code-alt-background);
+}
+
+.highlighttable .linenos {
+  width: 1px;
+}
+.highlighttable .linenodiv {
+  padding: 10px 6px;
+  text-align: right;
+  background-color: var(--code-alt-background);
+}
+.highlighttable .linenodiv pre {
+  color: rgba(0, 0, 0, 0.3);
+}
+.highlighttable .highlight {
+  padding-left: 10px;
+}
+/* -- highlight end -- */
