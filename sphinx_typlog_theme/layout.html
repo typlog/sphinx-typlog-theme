@@ -62,7 +62,9 @@
     {%- endif %}
   {%- endblock %}
   <script>{% include "js/ga.js" %}</script>
+  {%- block scripts %}
   {%- include "scripts.html" %}
+  {%- endblock %}
   {%- if theme_meta_html %}{{ theme_meta_html }}{% endif %}
   {%- block extrahead %}{% endblock %}
 </head>
