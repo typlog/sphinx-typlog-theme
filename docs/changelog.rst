@@ -3,6 +3,13 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.7.2
+-------------
+
+**Released on Feb 13, 2019**
+
+- Fix search scripts.
+
 Version 0.7.1
 -------------
 
