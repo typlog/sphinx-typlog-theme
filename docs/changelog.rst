@@ -3,6 +3,13 @@ Changelog
 
 Here is the changelog for sphinx typlog theme.
 
+Version 0.7.3
+-------------
+
+**Released on Jun 30, 2019**
+
+- Fix headerlink style
+
 Version 0.7.2
 -------------
 
