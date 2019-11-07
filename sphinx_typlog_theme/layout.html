@@ -91,7 +91,14 @@
     </div>
   </aside>
   <div class="t-content">
-    <div class="t-body yue">{% block body %}{% endblock %}</div>
+    <div class="t-body yue">
+      {%- if theme_warning %}
+      <div class="versionchanged">
+        <p>{{ theme_warning }}</p>
+      </div>
+      {%- endif %}
+      {% block body %}{% endblock %}
+    </div>
     {%- block footer %}
       {%- include "footer.html" %}
     {%- endblock %}

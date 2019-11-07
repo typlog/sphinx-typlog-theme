@@ -62,6 +62,7 @@ html_theme_options = {
     'github_user': 'typlog',
     'github_repo': 'sphinx-typlog-theme',
     'meta_html': '<meta name="generator" content="sphinx">',
+    'warning': 'This is a global <a href="#">warnning</a> message',
 }
 html_theme_path = [".."]
 
