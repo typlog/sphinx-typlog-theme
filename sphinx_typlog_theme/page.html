@@ -46,12 +46,12 @@
   <div class="t-pagination clearfix">
     {%- if prev %}
     <span>
-      ← <a href="{{ prev.link|e }}" title="{{ prev.title }}">{{ prev.title|truncate(30) }}</a>
+      ← <a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}">{{ prev.title|striptags|e|truncate(30) }}</a>
     </span>
     {%- endif %}
     {%- if next %}
     <span style="float:right">
-      <a href="{{ next.link|e }}" title="{{ next.title }}">{{ next.title|truncate(30) }}</a> →
+      <a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}">{{ next.title|striptags|e|truncate(30) }}</a> →
     </span>
     {%- endif %}
   </div>
